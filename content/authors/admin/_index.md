@@ -12,10 +12,10 @@ education:
   - course: BS in Political Science
     institution: University of Utah
     year: 2001
-    - course: BS in Spanish
+  - course: BS in Spanish
     institution: University of Utah
     year: 2001
-    - course: certificate in International Relations
+  - course: certificate in International Relations
     institution: University of Utah
     year: 2001
 email: "ceruttinger@gmail.com"
