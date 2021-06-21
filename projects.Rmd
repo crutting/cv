@@ -1,0 +1,18 @@
+---
+title: "Projects"
+---
+
+Sometimes I like to do projects and then post them on the internet for the whole world to benefit!
+here's some examples. 
+
+## [RN Data Analysis in R](https://rpubs.com/crutting/DesNewsAnalysis)
+
+- An RMarkdown analysis of RN wage data in Utah from 2015 to 2020
+
+## [Physician Ratios Dashboard]( https://clarkruttinger.shinyapps.io/flexratios/)
+
+- Comparison of Physician Specialty Ratios in Utah to AAMC Physician Specialty Ratio National Average 2010 to 2020
+
+## [National Nursing Dashboard]( https://clarkruttinger.shinyapps.io/draftboard/)
+
+- NCSBN 202 National Nurse Sample Survey data broken down by state of practice. 

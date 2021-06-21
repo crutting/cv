@@ -1,0 +1,15 @@
+name: "Clark Ruttinger Website"
+output_dir: "."
+navbar:
+  title: "Clark Ruttinger Professional Work"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Projects"     
+      href: projects.html  
+    - text: "About Me"
+      href: about.html
+output:
+  html_document:
+    theme: flatly
+    css: style.css

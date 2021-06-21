@@ -1,0 +1,11 @@
+---
+title: "About Me"
+---
+
+- __Name:__ Clark
+- __Ocupation:__ "Director of Workforce Research"
+- __Hobbies:__ Woodworking, Vintage Vespas, Pop-up Trailers and Gardening. 
+
+Here is a super cool photo of me doing one of my favorite things, yawning. 
+
+![](Ruttingerheadshot.jpg)
