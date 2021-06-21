@@ -4,4 +4,3 @@
 .Ruserdata
 blogdown
 .DS_Store
-public/ # if using Netlify
