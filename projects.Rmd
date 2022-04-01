@@ -3,12 +3,12 @@ title: "Projects"
 ---
 ## [Utah Mental Health Workforce 2021](http://umec-shiny-prod-alb-79075571.us-west-2.elb.amazonaws.com/projects/Mental_Health/)
 
-- Analysis of a survey I designed and administered to all state mental health professionals. I coded initial examples of charts and layout for my team. I coded the projection model and  the interactive chart for the Rshiny report. 
+- Analysis of a survey I designed and administered to all LCSWs, CMHCs, MFTs and Psychologists licensed in the state of Utah. I coded initial examples of charts and layout for my team to build out. I coded the projection model section of the report 
 
 
 ## [National Nursing by the Numbers Dashboard]( https://clarkruttinger.shinyapps.io/draftboard/)
 
-- I coauthored the analysis of the [NCSBN 2020 National Nurse Sample Survey](https://www.journalofnursingregulation.com/article/S2155-8256(21)00027-2/fulltext). Once the report was released I designed and coded this flexdashboard from the data grouped by reported state of employment.
+- I coauthored the analysis of the [NCSBN 2020 National Nurse Sample Survey](https://www.journalofnursingregulation.com/article/S2155-8256(21)00027-2/fulltext). Once the report was released I designed and coded this flexdashboard from the data grouped by reported state of employment for each survey respondent.
 
 ## [Physician Ratios Dashboard]( http://umec-shiny-prod-alb-79075571.us-west-2.elb.amazonaws.com/projects/FlexRatios/#section-about)
 

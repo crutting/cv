@@ -1,12 +1,8 @@
 ---
-title: "presentations"
-author: "Clark Ruttinger"
-date: "3/31/2022"
 output: html_document
 ---
 
-```{r setup, echo=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+```{r setup, echo=FALSE, results = FALSE, message=FALSE}
 library(ggplot2)
 library(here)
 library(tidyverse)
@@ -18,19 +14,18 @@ library(DT)
 
 ## Invited Lectures, Accepted Presentations
 
-A list of slide decks for presentations I have been invited to give or that I was accepted to present at conferences.
+A list of slide decks for presentations I have given
 
-```{r table, echo=FALSE}
-
+```{r, echo=FALSE, results = FALSE, message=FALSE}
 df<- read_csv(here("data", "presentations.csv"))
 df<- df[-c(1,2,5),]
 df$url <- paste0("<a href='",df$`Presentation Link`,"'>",df$`Presentation Title`,"</a>")
 
-p<- df %>%  select(url) %>% 
-  datatable()
-p
+#p<- df %>%  select(url) %>% 
+  #datatable()
+#p
 
-datatable(select(df, url) , escape = F)
+#datatable(select(df, url) , escape = F)
 
 table<- datatable(select(df, Conference, url, Month, Year, Location, Reason), escape = F)
 table

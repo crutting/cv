@@ -1,6 +1,5 @@
 ---
-title: "timeline"
-author: "Clark Ruttinger"
+title: "Timeline"
 output: html_document
 ---
 
