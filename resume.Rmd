@@ -205,8 +205,9 @@ Salt Lake City, Utah, 84124
 *10.2003 -- 01.2005*
 
 -   Researched, wrote, submitted and reported on over 150 established
-    grants per year from foundations, corporations and government
-    Tracked the receipt and recognition of grant and donation monies
+    grants per year from foundations, corporations and government.
+
+-   Tracked the receipt and recognition of grant and donation monies
     through donor database software.
 
 -   Assisted Development staff with the planning of all yearly
@@ -219,20 +220,18 @@ Salt Lake City, Utah, 84124
 *10.2002 --10.2003*
 
 -   Provided Case management services to between 20 and 30 clients at
-    any time Assisted clients with referrals to any community assistance
-    programs available Coordination with community agencies to assure
-    clients receipt of services.
+    any time Assisted clients with referrals to any community assistance programs available. 
+
+-   Coordination with community agencies to assure clients receipt of services.
 
 ## **Americorps**
 
 ### Wasatch Homeless Health Care- Care Coordinator *2002*
 
 -   Interviewed patients to assess eligibility for private clinic and
-    public health care programs Developed and implemented procedures and
-    training for the care coordination position. Assisted clients in
-    arranging to receive medical services at no cost through local
-    medical providers who were willing to voluntarily donate their
-    professional services.
+    public health care programs Developed and implemented procedures and training for the care coordination position. 
+
+-   Assisted clients in arranging to receive medical services at no cost through local medical providers who were willing to voluntarily donate their professional services.
 
 # **Education**
 
@@ -262,6 +261,7 @@ Salt Lake City, Utah, 84124
     healthcare workforce issues across member states. Focused on
     supporting nursing in the context of improving the nursing role in
     the inter-professional care team.
+
 -   Working on data driven decision making tools to support better
     resource allocation for healthcare policy makers at the state and
     national level.
@@ -309,7 +309,7 @@ Salt Lake City, Utah, 84124
     2020](https://www.journalofnursingregulation.com/article/S2155-8256(21)00027-2/fulltext){target="_blank"
     rel="noopener noreferrer"}
 
-    -   [post publication dashboard I designed and coded in R
+    -   [Post publication dashboard I designed and coded in R
         Shiny](https://clarkruttinger.shinyapps.io/draftboard/){target="_blank"
         rel="noopener noreferrer"}
 
