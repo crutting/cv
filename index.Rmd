@@ -6,6 +6,6 @@ title: "Clark Ruttinger"
 - __LinkedIn:__ [clark-ruttinger](www.linkedin.com/in/clark-ruttinger)
 - __Twitter:__ [![Twitter URL](@ceruttinger)
 
-Here is a super cool photo of me. w
+Here is a super cool photo of me. I built this whole website using Google hosting, Rstudio, Rmarkdown and code from various sources I cobbled together from the internet.   
 
 ![](Ruttingerheadshot.jpg)
