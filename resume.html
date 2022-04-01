@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>resume.knit</title>
+
+<script src="site_libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/codefolding.js"></script>
+<script src="site_libs/navigation-1.1/sourceembed.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+#rmd-source-code {
+  display: none;
+}
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Clark Ruttinger Professional Work</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="projects.html">Projects</a>
+</li>
+<li>
+  <a href="about.html">About Me</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+<div class="btn-group pull-right float-right">
+<button type="button" class="btn btn-default btn-xs btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu dropdown-menu-right" style="min-width: 50px;">
+<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+<li role="separator" class="divider"></li>
+<li><a id="rmd-download-source" href="#">Download Rmd</a></li>
+</ul>
+</div>
+
+
+
+
+</div>
+
+
+<div id="clark-ruttinger" class="section level1">
+<h1><strong>Clark Ruttinger</strong></h1>
+</div>
+<div id="contact-information" class="section level1">
+<h1><strong>Contact Information</strong></h1>
+<p>4028 South 1400 East</p>
+<p>Salt Lake City, Utah, 84124</p>
+<p><a href="mailto:ceruttinger@gmail.com" class="email">ceruttinger@gmail.com</a></p>
+<p>801-205-1514</p>
+</div>
+<div id="work-experience" class="section level1">
+<h1><strong>Work Experience</strong></h1>
+<div id="utah-medical-education-council" class="section level2">
+<h2><strong>Utah Medical Education Council</strong></h2>
+<div id="interim-executive-director" class="section level3">
+<h3>Interim, Executive Director</h3>
+<p><em>1.2022- present</em></p>
+<ul>
+<li><p>Worked with healthcare Industry, Education and Government Stakeholders to develop and pass <a href="https://le.utah.gov/~2022/bills/static/HB0176.html">HB 176 the Utah Healthcare Workforce Act.</a> in the 2022 Utah Legislative Session.</p>
+<ul>
+<li>This legislation sets up an advisory council to coordinate future healthcare worker needs as well as provide for better collection of data by integrating a supplemental supply survey with the state health professional licensing cycle with the goal of analysis and modeling to support more informed workforce decisions.</li>
+</ul></li>
+<li><p>Will become the Director of the Utah Health Workforce Information Center as of July 1, 2022 as described in the Utah Health Workforce Act</p></li>
+<li><p>Serves on the expert work-group for the HRSA funded <a href="https://www.healthworkforceta.org/about/expert-workgroup/">Health Workforce Technical Assistance Center</a> at the University of Albany.</p></li>
+<li><p>Serves as a member of the Utah Hospital Association Workforce Committee, The Utah Nurse Action Coalition and the Utah Organization of Nurse Leaders Academic Leadership Committee.</p></li>
+<li><p>Serves in a consulting capacity with the University of Utah School of Nursing- on the HRSA ANEW grant- “Addressing Barriers to Primary Care Workforce Needs in Rural and Underserved Settings with Academic-Clinical Partnerships and Innovations in Technology”.</p></li>
+<li><p>Consults with the University of Utah School of Medicine- “American Indian Health Workforce Plan”.</p></li>
+<li><p>Requested by the RAND Corporation to serve as a consultant on their proposal to produce the next study on AAMC Projections of Physician Workforce Supply, Demand and Need, pending being awarded this project.</p></li>
+</ul>
+</div>
+<div id="director-workforce-research" class="section level3">
+<h3>Director, Workforce Research</h3>
+<p><em>01.2018- 12.2021</em></p>
+<ul>
+<li><p>Supervise all research staff and interns. Management of all research projects for the Council.</p></li>
+<li><p>Recipient of IBM Healthcorps grant to model Primary Care workforce based on population health needs.</p></li>
+<li><p>Provide high level expertise in research design, statistical analysis and emerging issues/trends. Design, development and management of data cleaning processes, data warehousing, modeling and visualization.</p></li>
+<li><p>Responsible for survey design, data collection, authoring/editing of research papers, project reports, policy and position papers, articles and technical reports.</p></li>
+<li><p>Providing consultation, recommendations and support for executive level decision makers, educators administrators and researchers across the healthcare industry in Utah and nationally regarding medical workforce policy issues.</p></li>
+<li><p>Designed and maintained Amazon Cloud environment for research purposes</p>
+<ul>
+<li><p>Managed creation of data warehouse environment for storing supply data sets for analysis.</p></li>
+<li><p>Set up an <a href="https://www.rstudio.com/products/shiny/shiny-server/">RShiny</a> server in AWS cloud to publish interactive data visualizations.</p></li>
+<li><p>Set up a <a href="https://neo4j.com">NEO4J graph database</a> in AWS cloud with web browser interface on a utah.gov domain to query and analyze state <a href="https://www.apcdcouncil.org/">APCD</a> data.</p></li>
+</ul></li>
+</ul>
+</div>
+<div id="senior-institutional-research-analyst" class="section level3">
+<h3>Senior Institutional Research Analyst</h3>
+<p><em>01.2016 -2018</em></p>
+<ul>
+<li><p>Director of Utah’s Nursing Workforce Information Center.</p>
+<ul>
+<li><p>Responsible for mentoring and direction of the work of 5 research analysts.</p>
+<ul>
+<li><p>Gather survey data, analyze, present and advise on nurse education, supply and demand.</p></li>
+<li><p>Created methodology, data linkage and authored the first <a href="https://umec-nursing.utah.gov/wp-content/uploads/UtahRNEmploymentDemand2020.pdf">Utah Nursing Employment Demand Study</a> as required in <a href="https://le.utah.gov/~2018/bills/static/SB0147.html">statute</a> by the State legislature beginning in 2020.</p></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div id="research-analyst" class="section level3">
+<h3>Research Analyst</h3>
+<p><em>01.2010 – 12.2015</em></p>
+<ul>
+<li><p>Consulting, research, surveying, analysis and policy recommendation development for all categories of the Utah medical workforce (ie: physicians, dentists, PAs, APRNs, pharmacists)</p>
+<ul>
+<li>Increased frequency of cyclical workforce reporting by 20%</li>
+</ul></li>
+<li><p>Secure management of all data received by the office from state agencies and medical training programs.</p>
+<ul>
+<li>Wrote VBA code to clean and organize data for analysis.</li>
+</ul></li>
+<li><p>Maintain the state of Utah’s Physician Resident Rotation Database; allowing for resident training hospitals to assure maximum reimbursement from Medicare for Graduate Medical Education training.</p>
+<ul>
+<li>Wrote VBA code to format and combine multiple large spreadsheets into a standard format.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="valley-mental-healthhopeful-beginnings" class="section level2">
+<h2><strong>Valley Mental Health/Hopeful Beginnings</strong></h2>
+<div id="respite-care-provider" class="section level3">
+<h3>Respite Care Provider</h3>
+<p><em>06.2006 – 06.2015</em></p>
+<ul>
+<li>Provided weekly behavior modeling, opportunities for social interaction and activities for youth diagnosed with behavioral disorders receiving services through medicaid service providers Valley Mental Health and Hopeful Beginnings in Utah.</li>
+</ul>
+</div>
+</div>
+<div id="state-of-utah--department-of-workforce-services" class="section level2">
+<h2><strong>State of Utah- Department of Workforce Services</strong></h2>
+<div id="administrative-hearing-specialist" class="section level3">
+<h3>Administrative Hearing Specialist</h3>
+<p><em>03.2008 – 12.2009</em></p>
+<ul>
+<li><p>Acted as presiding officer in the review and representation of the State in administrative action against individuals who had incurred a public assistance overpayment.</p>
+<ul>
+<li>Created macros to increase speed and accuracy of processing administrative actions</li>
+</ul></li>
+<li><p>Reviewed the work of an Overpayment Calculation Analyst for accuracy, correct administrative legal classification and proper supporting evidence to order an overpayment of welfare benefits.</p>
+<ul>
+<li>Pulled welfare benefit data using an Oracle SQL graphic user interface.</li>
+</ul></li>
+<li><p>Responsible for explanation and presentation of complex welfare policies within the setting of an administrative hearing in front of an Administrative Law Judge to overpaid individuals and legal counsel.</p></li>
+</ul>
+</div>
+<div id="eligibility-specialist" class="section level3">
+<h3>Eligibility Specialist</h3>
+<p><em>06.2005 – 02.2008</em></p>
+<ul>
+<li><p>Interpreted federal and state welfare policies including TANF, Food Stamps and Child Care to approve application for benefits.</p></li>
+<li><p>Medicaid specialist embedded at <a href="https://www.chc-ut.org/">Community Health Centers- Utah</a>.</p></li>
+</ul>
+</div>
+</div>
+<div id="the-road-home" class="section level2">
+<h2>The Road Home</h2>
+<div id="grants-coordinator" class="section level3">
+<h3>Grants Coordinator</h3>
+<p><em>10.2003 – 01.2005</em></p>
+<ul>
+<li><p>Researched, wrote, submitted and reported on over 150 established grants per year from foundations, corporations and government Tracked the receipt and recognition of grant and donation monies through donor database software.</p></li>
+<li><p>Assisted Development staff with the planning of all yearly fundraisers, direct mailings, volunteer coordination, updating agency website and education of the public through tours and speaking engagements.</p></li>
+</ul>
+</div>
+<div id="housing-case-manager" class="section level3">
+<h3>Housing Case Manager</h3>
+<p><em>10.2002 –10.2003</em></p>
+<ul>
+<li>Provided Case management services to between 20 and 30 clients at any time Assisted clients with referrals to any community assistance programs available Coordination with community agencies to assure clients receipt of services.</li>
+</ul>
+</div>
+</div>
+<div id="americorps" class="section level2">
+<h2>Americorps</h2>
+<div id="wasatch-homeless-health-care--care-coordinator-2002" class="section level3">
+<h3>Wasatch Homeless Health Care- Care Coordinator <em>2002</em></h3>
+<ul>
+<li>Interviewed patients to assess eligibility for private clinic and public health care programs Developed and implemented procedures and training for the care coordination position. Assisted clients in arranging to receive medical services at no cost through local medical providers who were willing to voluntarily donate their professional services.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="education" class="section level1">
+<h1><strong>Education</strong></h1>
+<div id="master-of-business-administration-university-of-utah-2017" class="section level2">
+<h2><strong>Master of Business Administration</strong> <em>University of Utah, 2017</em></h2>
+<ul>
+<li>Certificate in Information Systems</li>
+</ul>
+</div>
+<div id="master-of-public-administration-university-of-utah-2007" class="section level2">
+<h2><strong>Master of Public Administration</strong> <em>University of Utah, 2007</em></h2>
+<ul>
+<li>Emphasis in program evaluation and policy analysis</li>
+</ul>
+</div>
+<div id="utah-dispute-resolution-utah-state-bar-2008" class="section level2">
+<h2><strong>Utah Dispute Resolution</strong> <em>Utah State Bar, 2008</em></h2>
+<ul>
+<li>40 hours of Basic Mediation Training</li>
+</ul>
+</div>
+<div id="ba-political-science-ba-spanish-university-of-utah-1998-2002" class="section level2">
+<h2><strong>BA, Political Science/ BA, Spanish</strong> <em>University of Utah, 1998-2002</em></h2>
+<ul>
+<li>Certificate in International Relations</li>
+</ul>
+</div>
+</div>
+<div id="volunteer-experience" class="section level1">
+<h1><strong>Volunteer Experience</strong></h1>
+<div id="national-forum-of-state-nursing-workforce-centers" class="section level2">
+<h2><a href="http://nursingworkforcecenters.org/" target="_blank" rel="noopener noreferrer">National Forum of State Nursing Workforce Centers</a></h2>
+<div id="board-member-2018-2020-board-president-2019" class="section level3">
+<h3>Board Member <em>2018-2020</em>/ Board President <em>2019</em></h3>
+<ul>
+<li>Sharing best practices in policy, planning and advocacy of healthcare workforce issues across member states. Focused on supporting nursing in the context of improving the nursing role in the inter-professional care team.</li>
+<li>Working on data driven decision making tools to support better resource allocation for healthcare policy makers at the state and national level.</li>
+</ul>
+</div>
+</div>
+<div id="u.s.-department-of-health-and-human-services-health-resources-and-services-division-hrsa" class="section level2">
+<h2><a href="https://www.hrsa.gov" target="_blank" rel="noopener noreferrer">U.S. Department of Health and Human Services Health Resources and Services Division (HRSA)</a></h2>
+<div id="grant-reviewer-01.2011--present" class="section level3">
+<h3>Grant Reviewer <em>01.2011- present</em></h3>
+<ul>
+<li>Objectively evaluate and score grant applications against published evaluation criteria in order to advise the federal government on selecting the best programs for funding from a competitive group of applicants.</li>
+</ul>
+</div>
+</div>
+<div id="salt-lake-city-planning-commission" class="section level2">
+<h2><strong>Salt Lake City Planning Commission</strong></h2>
+<div id="planning-commissioner-11.2011--2019" class="section level3">
+<h3>Planning Commissioner <em>11.2011- 2019</em></h3>
+<ul>
+<li><p>Adopt and act on any changes to the City’s master plans, small area plans, special studies, zoning ordinances, and zoning district maps, approving planned unit developments, conditional uses and certain subdivisions.</p>
+<ul>
+<li>Commission Chair for the 2015 year.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="community-action-program" class="section level2">
+<h2><strong>Community Action Program</strong></h2>
+<div id="landlordtenant-mediator-2009" class="section level3">
+<h3>Landlord/Tenant Mediator <em>2009</em></h3>
+<ul>
+<li>Mediated between landlords and tenants in pre and post eviction filing processes in issues of repairs and maintenance, late rent, lease violations, utilities, privacy issues etc</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="publications" class="section level1">
+<h1><strong>Publications</strong></h1>
+<div id="journal-articles" class="section level2">
+<h2><strong>Journal Articles</strong></h2>
+<ol style="list-style-type: decimal">
+<li><p><a href="https://www.rrh.org.au/journal/article/7050" target="_blank" rel="noopener noreferrer">Bounsanga et al, Using machine learning to identify factors associated with practice location of the healthcare workforce, Rural and Remote Health, 2022</a></p></li>
+<li><p><a href="https://www.journalofnursingregulation.com/article/S2155-8256(21)00027-2/fulltext" target="_blank" rel="noopener noreferrer">Smiley et al, The 2020 National Nursing Workforce Survey, Journal of Nursing Regulation, 2020</a></p>
+<ul>
+<li><a href="https://clarkruttinger.shinyapps.io/draftboard/" target="_blank" rel="noopener noreferrer">post publication dashboard I designed and coded in R Shiny</a></li>
+</ul></li>
+</ol>
+</div>
+<div id="published-analysis" class="section level2">
+<h2>Published Analysis</h2>
+<ol style="list-style-type: decimal">
+<li><p><a href="https://umec.utah.gov/publications/mental-health/">Utah Medical Education Council (2021). Utah’s Mental Health Workforce, 2021. Salt Lake City, UT. Utah Medical Education Council (2020).</a></p></li>
+<li><p><a href="https://umec.utah.gov/wp-content/uploads/2020-Physician-Workforce-Report-final.pdf">Utah’s Physician Workforce, 2020. Salt Lake City, UT. Utah Medical Education Council (2020).</a></p></li>
+<li><p><a href="https://umec-nursing.utah.gov/wp-content/uploads/UtahRN-LPNSupply2020-Final.pdf">Utah Supply of Registered Nurses and Licensed Practical Nurses, 2020. Salt Lake City, UT. Utah Medical Education Council (2020).</a></p></li>
+<li><p><a href="https://umec-nursing.utah.gov/wp-content/uploads/UtahRNEmploymentDemand2020.pdf">Utah Nursing Demand 2020. Salt Lake City, UT. Utah Medical Education Council (2017).</a></p></li>
+<li><p><a href="https://umec-nursing.utah.gov/wp-content/uploads/APRN_2017_FINAL.pdf">Utah’s Advanced Practice Registered Nurse Workforce, 2017: A Study of the Supply and Distribution of APRNs in Utah. Salt Lake City, UT. Utah Medical Education Council (2016).</a></p></li>
+<li><p><a href="https://umec-nursing.utah.gov/wp-content/uploads/APRN_2017_FINAL.pdf">Utah’s Physician Workforce, 2016: A Study of the Supply and Distribution of Physicians in Utah. Salt Lake City, UT. Utah Medical Education Council (2016).</a></p></li>
+<li><p><a href="https://umec-nursing.utah.gov/wp-content/uploads/RN-report-final-updated5-9-2016.pdf">Supply of Nurses in Utah: The 2016 Survey Utah’s Registered Nurses. Salt Lake City, UT. Utah Medical Education Council (2013).</a></p></li>
+<li><p><a href="https://umec-nursing.utah.gov/wp-content/uploads/2013APRNReport.pdf">Utah’s Advanced Practice Registered Nurse Workforce, 2013: A Study of the Supply and Distribution of APRNs in Utah. Salt Lake City, UT.</a></p></li>
+</ol>
+</div>
+</div>
+<div id="references" class="section level1">
+<h1>References</h1>
+<div id="michael-k.-magill-md" class="section level2">
+<h2><a href="https://www.theabfm.org/about/board/michael-k-magill-md">Michael K. Magill, MD</a></h2>
+<p>Professor Emeritus, University of Utah</p>
+<p>Department of Family and Preventive Medicine</p>
+<p>Chair, American Board of Family Medicine</p>
+<p><a href="mailto:michael.magill@hsc.utah.edu" class="email">michael.magill@hsc.utah.edu</a></p>
+<p>375 Chipeta Way, Suite A</p>
+<p>Salt Lake City, UT 84108</p>
+<p>801-554-3653</p>
+</div>
+<div id="paul-b.-jackson" class="section level2">
+<h2><a href="https://www.utahhospitals.org/contact">Paul B. Jackson</a></h2>
+<p>Workforce Consultant</p>
+<p>Utah Hospital Association</p>
+<p>2180 South 1300 East, Suite 440</p>
+<p>Salt Lake City, Utah 84106</p>
+<p><a href="mailto:jacksonjenna@msn.com" class="email">jacksonjenna@msn.com</a></p>
+<p>801-520-2378</p>
+</div>
+<div id="jana-bitton-mpa" class="section level2">
+<h2><a href="https://www.linkedin.com/in/janabitton/">Jana Bitton, MPA</a></h2>
+<p>Executive Director, Oregon Center for Nursing</p>
+<p>President, National Forum of State Nursing Workforce Centers</p>
+<p>5000 N. Willamette Blvd. MS 192</p>
+<p>Portland, OR 97203</p>
+<p>360-609-0221</p>
+<p><a href="mailto:jana.bitton@oregoncenterfornursing.org" class="email">jana.bitton@oregoncenterfornursing.org</a></p>
+</div>
+</div>
+
+<div id="rmd-source-code">LS0tCm91dHB1dDogCiAgaHRtbF9kb2N1bWVudDoKICAgIHRvYzogdHJ1ZQogICAgdG9jX2RlcHRoOiA2CiAgICBudW1iZXJfc2VjdGlvbnM6IG5vCiAgICB0b2NfZmxvYXQ6IHllcwogICAgY29kZV9mb2xkaW5nOiBoaWRlCiAgICB0aGVtZTogbHVtZW4KICAgIGNvZGVfZG93bmxvYWQ6IHRydWUKICAgIGZpZ19jcm9wOiBubwogICAgZGF0ZTogJycnciBmb3JtYXQoc3lzLnRpbWUoKSwgJyclZCAlQiwgJVknJyknJycKZWRpdG9yX29wdGlvbnM6IAogIG1hcmtkb3duOiAKICAgIHdyYXA6IDcyCi0tLQoKYGBge3Igc2V0dXAsIGluY2x1ZGU9RkFMU0V9CmtuaXRyOjpvcHRzX2NodW5rJHNldChlY2hvID0gVFJVRSkKYGBgCgojICoqQ2xhcmsgUnV0dGluZ2VyKioKCiMgKipDb250YWN0IEluZm9ybWF0aW9uKioKCjQwMjggU291dGggMTQwMCBFYXN0CgpTYWx0IExha2UgQ2l0eSwgVXRhaCwgODQxMjQKCltjZXJ1dHRpbmdlclxAZ21haWwuY29tXShtYWlsdG86Y2VydXR0aW5nZXJAZ21haWwuY29tKXsuZW1haWx9Cgo4MDEtMjA1LTE1MTQKCiMgKipXb3JrIEV4cGVyaWVuY2UqKgoKIyMgKipVdGFoIE1lZGljYWwgRWR1Y2F0aW9uIENvdW5jaWwqKgoKIyMjIEludGVyaW0sIEV4ZWN1dGl2ZSBEaXJlY3RvcgoKKjEuMjAyMi0gcHJlc2VudCoKCi0gICBXb3JrZWQgd2l0aCBoZWFsdGhjYXJlIEluZHVzdHJ5LCBFZHVjYXRpb24gYW5kIEdvdmVybm1lbnQKICAgIFN0YWtlaG9sZGVycyB0byBkZXZlbG9wIGFuZCBwYXNzIFtIQiAxNzYgdGhlIFV0YWggSGVhbHRoY2FyZQogICAgV29ya2ZvcmNlIEFjdC5dKGh0dHBzOi8vbGUudXRhaC5nb3YvfjIwMjIvYmlsbHMvc3RhdGljL0hCMDE3Ni5odG1sKQogICAgaW4gdGhlIDIwMjIgVXRhaCBMZWdpc2xhdGl2ZSBTZXNzaW9uLgoKICAgIC0gICBUaGlzIGxlZ2lzbGF0aW9uIHNldHMgdXAgYW4gYWR2aXNvcnkgY291bmNpbCB0byBjb29yZGluYXRlCiAgICAgICAgZnV0dXJlIGhlYWx0aGNhcmUgd29ya2VyIG5lZWRzIGFzIHdlbGwgYXMgcHJvdmlkZSBmb3IgYmV0dGVyCiAgICAgICAgY29sbGVjdGlvbiBvZiBkYXRhIGJ5IGludGVncmF0aW5nIGEgc3VwcGxlbWVudGFsIHN1cHBseSBzdXJ2ZXkKICAgICAgICB3aXRoIHRoZSBzdGF0ZSBoZWFsdGggcHJvZmVzc2lvbmFsIGxpY2Vuc2luZyBjeWNsZSB3aXRoIHRoZSBnb2FsCiAgICAgICAgb2YgYW5hbHlzaXMgYW5kIG1vZGVsaW5nIHRvIHN1cHBvcnQgbW9yZSBpbmZvcm1lZCB3b3JrZm9yY2UKICAgICAgICBkZWNpc2lvbnMuCgotICAgV2lsbCBiZWNvbWUgdGhlIERpcmVjdG9yIG9mIHRoZSBVdGFoIEhlYWx0aCBXb3JrZm9yY2UgSW5mb3JtYXRpb24KICAgIENlbnRlciBhcyBvZiBKdWx5IDEsIDIwMjIgYXMgZGVzY3JpYmVkIGluIHRoZSBVdGFoIEhlYWx0aCBXb3JrZm9yY2UKICAgIEFjdAoKLSAgIFNlcnZlcyBvbiB0aGUgZXhwZXJ0IHdvcmstZ3JvdXAgZm9yIHRoZSBIUlNBIGZ1bmRlZCBbSGVhbHRoCiAgICBXb3JrZm9yY2UgVGVjaG5pY2FsIEFzc2lzdGFuY2UKICAgIENlbnRlcl0oaHR0cHM6Ly93d3cuaGVhbHRod29ya2ZvcmNldGEub3JnL2Fib3V0L2V4cGVydC13b3JrZ3JvdXAvKQogICAgYXQgdGhlIFVuaXZlcnNpdHkgb2YgQWxiYW55LgoKLSAgIFNlcnZlcyBhcyBhIG1lbWJlciBvZiB0aGUgVXRhaCBIb3NwaXRhbCBBc3NvY2lhdGlvbiBXb3JrZm9yY2UKICAgIENvbW1pdHRlZSwgVGhlIFV0YWggTnVyc2UgQWN0aW9uIENvYWxpdGlvbiBhbmQgdGhlIFV0YWggT3JnYW5pemF0aW9uCiAgICBvZiBOdXJzZSBMZWFkZXJzIEFjYWRlbWljIExlYWRlcnNoaXAgQ29tbWl0dGVlLgoKLSAgIFNlcnZlcyBpbiBhIGNvbnN1bHRpbmcgY2FwYWNpdHkgd2l0aCB0aGUgVW5pdmVyc2l0eSBvZiBVdGFoIFNjaG9vbAogICAgb2YgTnVyc2luZy0gb24gdGhlIEhSU0EgQU5FVyBncmFudC0gIkFkZHJlc3NpbmcgQmFycmllcnMgdG8gUHJpbWFyeQogICAgQ2FyZSBXb3JrZm9yY2UgTmVlZHMgaW4gUnVyYWwgYW5kIFVuZGVyc2VydmVkIFNldHRpbmdzIHdpdGgKICAgIEFjYWRlbWljLUNsaW5pY2FsIFBhcnRuZXJzaGlwcyBhbmQgSW5ub3ZhdGlvbnMgaW4gVGVjaG5vbG9neSIuCgotICAgQ29uc3VsdHMgd2l0aCB0aGUgVW5pdmVyc2l0eSBvZiBVdGFoIFNjaG9vbCBvZiBNZWRpY2luZS0gIkFtZXJpY2FuCiAgICBJbmRpYW4gSGVhbHRoIFdvcmtmb3JjZSBQbGFuIi4KCi0gICBSZXF1ZXN0ZWQgYnkgdGhlIFJBTkQgQ29ycG9yYXRpb24gdG8gc2VydmUgYXMgYSBjb25zdWx0YW50IG9uIHRoZWlyCiAgICBwcm9wb3NhbCB0byBwcm9kdWNlIHRoZSBuZXh0IHN0dWR5IG9uIEFBTUMgUHJvamVjdGlvbnMgb2YgUGh5c2ljaWFuCiAgICBXb3JrZm9yY2UgU3VwcGx5LCBEZW1hbmQgYW5kIE5lZWQsIHBlbmRpbmcgYmVpbmcgYXdhcmRlZCB0aGlzCiAgICBwcm9qZWN0LgoKIyMjIERpcmVjdG9yLCBXb3JrZm9yY2UgUmVzZWFyY2gKCiowMS4yMDE4LSAxMi4yMDIxKgoKLSAgIFN1cGVydmlzZSBhbGwgcmVzZWFyY2ggc3RhZmYgYW5kIGludGVybnMuIE1hbmFnZW1lbnQgb2YgYWxsIHJlc2VhcmNoCiAgICBwcm9qZWN0cyBmb3IgdGhlIENvdW5jaWwuCgotICAgUmVjaXBpZW50IG9mIElCTSBIZWFsdGhjb3JwcyBncmFudCB0byBtb2RlbCBQcmltYXJ5IENhcmUgd29ya2ZvcmNlCiAgICBiYXNlZCBvbiBwb3B1bGF0aW9uIGhlYWx0aCBuZWVkcy4KCi0gICBQcm92aWRlIGhpZ2ggbGV2ZWwgZXhwZXJ0aXNlIGluIHJlc2VhcmNoIGRlc2lnbiwgc3RhdGlzdGljYWwKICAgIGFuYWx5c2lzIGFuZCBlbWVyZ2luZyBpc3N1ZXMvdHJlbmRzLiBEZXNpZ24sIGRldmVsb3BtZW50IGFuZAogICAgbWFuYWdlbWVudCBvZiBkYXRhIGNsZWFuaW5nIHByb2Nlc3NlcywgZGF0YSB3YXJlaG91c2luZywgbW9kZWxpbmcKICAgIGFuZCB2aXN1YWxpemF0aW9uLgoKLSAgIFJlc3BvbnNpYmxlIGZvciBzdXJ2ZXkgZGVzaWduLCBkYXRhIGNvbGxlY3Rpb24sIGF1dGhvcmluZy9lZGl0aW5nIG9mCiAgICByZXNlYXJjaCBwYXBlcnMsIHByb2plY3QgcmVwb3J0cywgcG9saWN5IGFuZCBwb3NpdGlvbiBwYXBlcnMsCiAgICBhcnRpY2xlcyBhbmQgdGVjaG5pY2FsIHJlcG9ydHMuCgotICAgUHJvdmlkaW5nIGNvbnN1bHRhdGlvbiwgcmVjb21tZW5kYXRpb25zIGFuZCBzdXBwb3J0IGZvciBleGVjdXRpdmUKICAgIGxldmVsIGRlY2lzaW9uIG1ha2VycywgZWR1Y2F0b3JzIGFkbWluaXN0cmF0b3JzIGFuZCByZXNlYXJjaGVycwogICAgYWNyb3NzIHRoZSBoZWFsdGhjYXJlIGluZHVzdHJ5IGluIFV0YWggYW5kIG5hdGlvbmFsbHkgcmVnYXJkaW5nCiAgICBtZWRpY2FsIHdvcmtmb3JjZSBwb2xpY3kgaXNzdWVzLgoKLSAgIERlc2lnbmVkIGFuZCBtYWludGFpbmVkIEFtYXpvbiBDbG91ZCBlbnZpcm9ubWVudCBmb3IgcmVzZWFyY2gKICAgIHB1cnBvc2VzCgogICAgLSAgIE1hbmFnZWQgY3JlYXRpb24gb2YgZGF0YSB3YXJlaG91c2UgZW52aXJvbm1lbnQgZm9yIHN0b3JpbmcKICAgICAgICBzdXBwbHkgZGF0YSBzZXRzIGZvciBhbmFseXNpcy4KCiAgICAtICAgU2V0IHVwIGFuCiAgICAgICAgW1JTaGlueV0oaHR0cHM6Ly93d3cucnN0dWRpby5jb20vcHJvZHVjdHMvc2hpbnkvc2hpbnktc2VydmVyLykKICAgICAgICBzZXJ2ZXIgaW4gQVdTIGNsb3VkIHRvIHB1Ymxpc2ggaW50ZXJhY3RpdmUgZGF0YSB2aXN1YWxpemF0aW9ucy4KCiAgICAtICAgU2V0IHVwIGEgW05FTzRKIGdyYXBoIGRhdGFiYXNlXShodHRwczovL25lbzRqLmNvbSkgaW4gQVdTIGNsb3VkCiAgICAgICAgd2l0aCB3ZWIgYnJvd3NlciBpbnRlcmZhY2Ugb24gYSB1dGFoLmdvdiBkb21haW4gdG8gcXVlcnkgYW5kCiAgICAgICAgYW5hbHl6ZSBzdGF0ZSBbQVBDRF0oaHR0cHM6Ly93d3cuYXBjZGNvdW5jaWwub3JnLykgZGF0YS4KCiMjIyBTZW5pb3IgSW5zdGl0dXRpb25hbCBSZXNlYXJjaCBBbmFseXN0CgoqMDEuMjAxNiAtMjAxOCoKCi0gICBEaXJlY3RvciBvZiBVdGFoJ3MgTnVyc2luZyBXb3JrZm9yY2UgSW5mb3JtYXRpb24gQ2VudGVyLgoKICAgIC0gICBSZXNwb25zaWJsZSBmb3IgbWVudG9yaW5nIGFuZCBkaXJlY3Rpb24gb2YgdGhlIHdvcmsgb2YgNQogICAgICAgIHJlc2VhcmNoIGFuYWx5c3RzLgoKICAgICAgICAtICAgR2F0aGVyIHN1cnZleSBkYXRhLCBhbmFseXplLCBwcmVzZW50IGFuZCBhZHZpc2Ugb24gbnVyc2UKICAgICAgICAgICAgZWR1Y2F0aW9uLCBzdXBwbHkgYW5kIGRlbWFuZC4KCiAgICAgICAgLSAgIENyZWF0ZWQgbWV0aG9kb2xvZ3ksIGRhdGEgbGlua2FnZSBhbmQgYXV0aG9yZWQgdGhlIGZpcnN0CiAgICAgICAgICAgIFtVdGFoIE51cnNpbmcgRW1wbG95bWVudCBEZW1hbmQKICAgICAgICAgICAgU3R1ZHldKGh0dHBzOi8vdW1lYy1udXJzaW5nLnV0YWguZ292L3dwLWNvbnRlbnQvdXBsb2Fkcy9VdGFoUk5FbXBsb3ltZW50RGVtYW5kMjAyMC5wZGYpCiAgICAgICAgICAgIGFzIHJlcXVpcmVkIGluCiAgICAgICAgICAgIFtzdGF0dXRlXShodHRwczovL2xlLnV0YWguZ292L34yMDE4L2JpbGxzL3N0YXRpYy9TQjAxNDcuaHRtbCkKICAgICAgICAgICAgYnkgdGhlIFN0YXRlIGxlZ2lzbGF0dXJlIGJlZ2lubmluZyBpbiAyMDIwLgoKIyMjIFJlc2VhcmNoIEFuYWx5c3QKCiowMS4yMDEwIC0tIDEyLjIwMTUqCgotICAgQ29uc3VsdGluZywgcmVzZWFyY2gsIHN1cnZleWluZywgYW5hbHlzaXMgYW5kIHBvbGljeSByZWNvbW1lbmRhdGlvbgogICAgZGV2ZWxvcG1lbnQgZm9yIGFsbCBjYXRlZ29yaWVzIG9mIHRoZSBVdGFoIG1lZGljYWwgd29ya2ZvcmNlIChpZToKICAgIHBoeXNpY2lhbnMsIGRlbnRpc3RzLCBQQXMsIEFQUk5zLCBwaGFybWFjaXN0cykKCiAgICAtICAgSW5jcmVhc2VkIGZyZXF1ZW5jeSBvZiBjeWNsaWNhbCB3b3JrZm9yY2UgcmVwb3J0aW5nIGJ5IDIwJQoKLSAgIFNlY3VyZSBtYW5hZ2VtZW50IG9mIGFsbCBkYXRhIHJlY2VpdmVkIGJ5IHRoZSBvZmZpY2UgZnJvbSBzdGF0ZQogICAgYWdlbmNpZXMgYW5kIG1lZGljYWwgdHJhaW5pbmcgcHJvZ3JhbXMuCgogICAgLSAgIFdyb3RlIFZCQSBjb2RlIHRvIGNsZWFuIGFuZCBvcmdhbml6ZSBkYXRhIGZvciBhbmFseXNpcy4KCi0gICBNYWludGFpbiB0aGUgc3RhdGUgb2YgVXRhaCdzIFBoeXNpY2lhbiBSZXNpZGVudCBSb3RhdGlvbiBEYXRhYmFzZTsKICAgIGFsbG93aW5nIGZvciByZXNpZGVudCB0cmFpbmluZyBob3NwaXRhbHMgdG8gYXNzdXJlIG1heGltdW0KICAgIHJlaW1idXJzZW1lbnQgZnJvbSBNZWRpY2FyZSBmb3IgR3JhZHVhdGUgTWVkaWNhbCBFZHVjYXRpb24gdHJhaW5pbmcuCgogICAgLSAgIFdyb3RlIFZCQSBjb2RlIHRvIGZvcm1hdCBhbmQgY29tYmluZSBtdWx0aXBsZSBsYXJnZSBzcHJlYWRzaGVldHMKICAgICAgICBpbnRvIGEgc3RhbmRhcmQgZm9ybWF0LgoKIyMgKipWYWxsZXkgTWVudGFsIEhlYWx0aC9Ib3BlZnVsIEJlZ2lubmluZ3MqKgoKIyMjIFJlc3BpdGUgQ2FyZSBQcm92aWRlcgoKKjA2LjIwMDYgLS0gMDYuMjAxNSoKCi0gICBQcm92aWRlZCB3ZWVrbHkgYmVoYXZpb3IgbW9kZWxpbmcsIG9wcG9ydHVuaXRpZXMgZm9yIHNvY2lhbAogICAgaW50ZXJhY3Rpb24gYW5kIGFjdGl2aXRpZXMgZm9yIHlvdXRoIGRpYWdub3NlZCB3aXRoIGJlaGF2aW9yYWwKICAgIGRpc29yZGVycyByZWNlaXZpbmcgc2VydmljZXMgdGhyb3VnaCBtZWRpY2FpZCBzZXJ2aWNlIHByb3ZpZGVycwogICAgVmFsbGV5IE1lbnRhbCBIZWFsdGggYW5kIEhvcGVmdWwgQmVnaW5uaW5ncyBpbiBVdGFoLgoKIyMgKipTdGF0ZSBvZiBVdGFoLSBEZXBhcnRtZW50IG9mIFdvcmtmb3JjZSBTZXJ2aWNlcyoqCgojIyMgQWRtaW5pc3RyYXRpdmUgSGVhcmluZyBTcGVjaWFsaXN0CgoqMDMuMjAwOCAtLSAxMi4yMDA5KgoKLSAgIEFjdGVkIGFzIHByZXNpZGluZyBvZmZpY2VyIGluIHRoZSByZXZpZXcgYW5kIHJlcHJlc2VudGF0aW9uIG9mIHRoZQogICAgU3RhdGUgaW4gYWRtaW5pc3RyYXRpdmUgYWN0aW9uIGFnYWluc3QgaW5kaXZpZHVhbHMgd2hvIGhhZCBpbmN1cnJlZAogICAgYSBwdWJsaWMgYXNzaXN0YW5jZSBvdmVycGF5bWVudC4KCiAgICAtICAgQ3JlYXRlZCBtYWNyb3MgdG8gaW5jcmVhc2Ugc3BlZWQgYW5kIGFjY3VyYWN5IG9mIHByb2Nlc3NpbmcKICAgICAgICBhZG1pbmlzdHJhdGl2ZSBhY3Rpb25zCgotICAgUmV2aWV3ZWQgdGhlIHdvcmsgb2YgYW4gT3ZlcnBheW1lbnQgQ2FsY3VsYXRpb24gQW5hbHlzdCBmb3IKICAgIGFjY3VyYWN5LCBjb3JyZWN0IGFkbWluaXN0cmF0aXZlIGxlZ2FsIGNsYXNzaWZpY2F0aW9uIGFuZCBwcm9wZXIKICAgIHN1cHBvcnRpbmcgZXZpZGVuY2UgdG8gb3JkZXIgYW4gb3ZlcnBheW1lbnQgb2Ygd2VsZmFyZSBiZW5lZml0cy4KCiAgICAtICAgUHVsbGVkIHdlbGZhcmUgYmVuZWZpdCBkYXRhIHVzaW5nIGFuIE9yYWNsZSBTUUwgZ3JhcGhpYyB1c2VyCiAgICAgICAgaW50ZXJmYWNlLgoKLSAgIFJlc3BvbnNpYmxlIGZvciBleHBsYW5hdGlvbiBhbmQgcHJlc2VudGF0aW9uIG9mIGNvbXBsZXggd2VsZmFyZQogICAgcG9saWNpZXMgd2l0aGluIHRoZSBzZXR0aW5nIG9mIGFuIGFkbWluaXN0cmF0aXZlIGhlYXJpbmcgaW4gZnJvbnQgb2YKICAgIGFuIEFkbWluaXN0cmF0aXZlIExhdyBKdWRnZSB0byBvdmVycGFpZCBpbmRpdmlkdWFscyBhbmQgbGVnYWwKICAgIGNvdW5zZWwuCgojIyMgRWxpZ2liaWxpdHkgU3BlY2lhbGlzdAoKKjA2LjIwMDUgLS0gMDIuMjAwOCoKCi0gICBJbnRlcnByZXRlZCBmZWRlcmFsIGFuZCBzdGF0ZSB3ZWxmYXJlIHBvbGljaWVzIGluY2x1ZGluZyBUQU5GLCBGb29kCiAgICBTdGFtcHMgYW5kIENoaWxkIENhcmUgdG8gYXBwcm92ZSBhcHBsaWNhdGlvbiBmb3IgYmVuZWZpdHMuCgotICAgTWVkaWNhaWQgc3BlY2lhbGlzdCBlbWJlZGRlZCBhdCBbQ29tbXVuaXR5IEhlYWx0aCBDZW50ZXJzLQogICAgVXRhaF0oaHR0cHM6Ly93d3cuY2hjLXV0Lm9yZy8pLgoKIyMgVGhlIFJvYWQgSG9tZQoKIyMjIEdyYW50cyBDb29yZGluYXRvcgoKKjEwLjIwMDMgLS0gMDEuMjAwNSoKCi0gICBSZXNlYXJjaGVkLCB3cm90ZSwgc3VibWl0dGVkIGFuZCByZXBvcnRlZCBvbiBvdmVyIDE1MCBlc3RhYmxpc2hlZAogICAgZ3JhbnRzIHBlciB5ZWFyIGZyb20gZm91bmRhdGlvbnMsIGNvcnBvcmF0aW9ucyBhbmQgZ292ZXJubWVudAogICAgVHJhY2tlZCB0aGUgcmVjZWlwdCBhbmQgcmVjb2duaXRpb24gb2YgZ3JhbnQgYW5kIGRvbmF0aW9uIG1vbmllcwogICAgdGhyb3VnaCBkb25vciBkYXRhYmFzZSBzb2Z0d2FyZS4KCi0gICBBc3Npc3RlZCBEZXZlbG9wbWVudCBzdGFmZiB3aXRoIHRoZSBwbGFubmluZyBvZiBhbGwgeWVhcmx5CiAgICBmdW5kcmFpc2VycywgZGlyZWN0IG1haWxpbmdzLCB2b2x1bnRlZXIgY29vcmRpbmF0aW9uLCB1cGRhdGluZwogICAgYWdlbmN5IHdlYnNpdGUgYW5kIGVkdWNhdGlvbiBvZiB0aGUgcHVibGljIHRocm91Z2ggdG91cnMgYW5kCiAgICBzcGVha2luZyBlbmdhZ2VtZW50cy4KCiMjIyBIb3VzaW5nIENhc2UgTWFuYWdlcgoKKjEwLjIwMDIgLS0xMC4yMDAzKgoKLSAgIFByb3ZpZGVkIENhc2UgbWFuYWdlbWVudCBzZXJ2aWNlcyB0byBiZXR3ZWVuIDIwIGFuZCAzMCBjbGllbnRzIGF0CiAgICBhbnkgdGltZSBBc3Npc3RlZCBjbGllbnRzIHdpdGggcmVmZXJyYWxzIHRvIGFueSBjb21tdW5pdHkgYXNzaXN0YW5jZQogICAgcHJvZ3JhbXMgYXZhaWxhYmxlIENvb3JkaW5hdGlvbiB3aXRoIGNvbW11bml0eSBhZ2VuY2llcyB0byBhc3N1cmUKICAgIGNsaWVudHMgcmVjZWlwdCBvZiBzZXJ2aWNlcy4KCiMjIEFtZXJpY29ycHMKCiMjIyBXYXNhdGNoIEhvbWVsZXNzIEhlYWx0aCBDYXJlLSBDYXJlIENvb3JkaW5hdG9yICoyMDAyKgoKLSAgIEludGVydmlld2VkIHBhdGllbnRzIHRvIGFzc2VzcyBlbGlnaWJpbGl0eSBmb3IgcHJpdmF0ZSBjbGluaWMgYW5kCiAgICBwdWJsaWMgaGVhbHRoIGNhcmUgcHJvZ3JhbXMgRGV2ZWxvcGVkIGFuZCBpbXBsZW1lbnRlZCBwcm9jZWR1cmVzIGFuZAogICAgdHJhaW5pbmcgZm9yIHRoZSBjYXJlIGNvb3JkaW5hdGlvbiBwb3NpdGlvbi4gQXNzaXN0ZWQgY2xpZW50cyBpbgogICAgYXJyYW5naW5nIHRvIHJlY2VpdmUgbWVkaWNhbCBzZXJ2aWNlcyBhdCBubyBjb3N0IHRocm91Z2ggbG9jYWwKICAgIG1lZGljYWwgcHJvdmlkZXJzIHdobyB3ZXJlIHdpbGxpbmcgdG8gdm9sdW50YXJpbHkgZG9uYXRlIHRoZWlyCiAgICBwcm9mZXNzaW9uYWwgc2VydmljZXMuCgojICoqRWR1Y2F0aW9uKioKCiMjICoqTWFzdGVyIG9mIEJ1c2luZXNzIEFkbWluaXN0cmF0aW9uKiogKlVuaXZlcnNpdHkgb2YgVXRhaCwgMjAxNyoKCi0gICBDZXJ0aWZpY2F0ZSBpbiBJbmZvcm1hdGlvbiBTeXN0ZW1zCgojIyAqKk1hc3RlciBvZiBQdWJsaWMgQWRtaW5pc3RyYXRpb24qKiAqVW5pdmVyc2l0eSBvZiBVdGFoLCAyMDA3KgoKLSAgIEVtcGhhc2lzIGluIHByb2dyYW0gZXZhbHVhdGlvbiBhbmQgcG9saWN5IGFuYWx5c2lzCgojIyAqKlV0YWggRGlzcHV0ZSBSZXNvbHV0aW9uKiogKlV0YWggU3RhdGUgQmFyLCAyMDA4KgoKLSAgIDQwIGhvdXJzIG9mIEJhc2ljIE1lZGlhdGlvbiBUcmFpbmluZwoKIyMgKipCQSwgUG9saXRpY2FsIFNjaWVuY2UvIEJBLCBTcGFuaXNoKiogKlVuaXZlcnNpdHkgb2YgVXRhaCwgMTk5OC0yMDAyKgoKLSAgIENlcnRpZmljYXRlIGluIEludGVybmF0aW9uYWwgUmVsYXRpb25zCgojICoqVm9sdW50ZWVyIEV4cGVyaWVuY2UqKgoKIyMgW05hdGlvbmFsIEZvcnVtIG9mIFN0YXRlIE51cnNpbmcgV29ya2ZvcmNlIENlbnRlcnNdKGh0dHA6Ly9udXJzaW5nd29ya2ZvcmNlY2VudGVycy5vcmcvKXt0YXJnZXQ9Il9ibGFuayIgcmVsPSJub29wZW5lciBub3JlZmVycmVyIn0KCiMjIyBCb2FyZCBNZW1iZXIgKjIwMTgtMjAyMCovIEJvYXJkIFByZXNpZGVudCAqMjAxOSoKCi0gICBTaGFyaW5nIGJlc3QgcHJhY3RpY2VzIGluIHBvbGljeSwgcGxhbm5pbmcgYW5kIGFkdm9jYWN5IG9mCiAgICBoZWFsdGhjYXJlIHdvcmtmb3JjZSBpc3N1ZXMgYWNyb3NzIG1lbWJlciBzdGF0ZXMuIEZvY3VzZWQgb24KICAgIHN1cHBvcnRpbmcgbnVyc2luZyBpbiB0aGUgY29udGV4dCBvZiBpbXByb3ZpbmcgdGhlIG51cnNpbmcgcm9sZSBpbgogICAgdGhlIGludGVyLXByb2Zlc3Npb25hbCBjYXJlIHRlYW0uCi0gICBXb3JraW5nIG9uIGRhdGEgZHJpdmVuIGRlY2lzaW9uIG1ha2luZyB0b29scyB0byBzdXBwb3J0IGJldHRlcgogICAgcmVzb3VyY2UgYWxsb2NhdGlvbiBmb3IgaGVhbHRoY2FyZSBwb2xpY3kgbWFrZXJzIGF0IHRoZSBzdGF0ZSBhbmQKICAgIG5hdGlvbmFsIGxldmVsLgoKIyMgW1UuUy4gRGVwYXJ0bWVudCBvZiBIZWFsdGggYW5kIEh1bWFuIFNlcnZpY2VzIEhlYWx0aCBSZXNvdXJjZXMgYW5kIFNlcnZpY2VzIERpdmlzaW9uIChIUlNBKV0oaHR0cHM6Ly93d3cuaHJzYS5nb3Ype3RhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIG5vcmVmZXJyZXIifQoKIyMjIEdyYW50IFJldmlld2VyICowMS4yMDExLSBwcmVzZW50KgoKLSAgIE9iamVjdGl2ZWx5IGV2YWx1YXRlIGFuZCBzY29yZSBncmFudCBhcHBsaWNhdGlvbnMgYWdhaW5zdCBwdWJsaXNoZWQKICAgIGV2YWx1YXRpb24gY3JpdGVyaWEgaW4gb3JkZXIgdG8gYWR2aXNlIHRoZSBmZWRlcmFsIGdvdmVybm1lbnQgb24KICAgIHNlbGVjdGluZyB0aGUgYmVzdCBwcm9ncmFtcyBmb3IgZnVuZGluZyBmcm9tIGEgY29tcGV0aXRpdmUgZ3JvdXAgb2YKICAgIGFwcGxpY2FudHMuCgojIyAqKlNhbHQgTGFrZSBDaXR5IFBsYW5uaW5nIENvbW1pc3Npb24qKgoKIyMjIFBsYW5uaW5nIENvbW1pc3Npb25lciAqMTEuMjAxMS0gMjAxOSoKCi0gICBBZG9wdCBhbmQgYWN0IG9uIGFueSBjaGFuZ2VzIHRvIHRoZSBDaXR5J3MgbWFzdGVyIHBsYW5zLCBzbWFsbCBhcmVhCiAgICBwbGFucywgc3BlY2lhbCBzdHVkaWVzLCB6b25pbmcgb3JkaW5hbmNlcywgYW5kIHpvbmluZyBkaXN0cmljdCBtYXBzLAogICAgYXBwcm92aW5nIHBsYW5uZWQgdW5pdCBkZXZlbG9wbWVudHMsIGNvbmRpdGlvbmFsIHVzZXMgYW5kIGNlcnRhaW4KICAgIHN1YmRpdmlzaW9ucy4KCiAgICAtICAgQ29tbWlzc2lvbiBDaGFpciBmb3IgdGhlIDIwMTUgeWVhci4KCiMjICoqQ29tbXVuaXR5IEFjdGlvbiBQcm9ncmFtKioKCiMjIyBMYW5kbG9yZC9UZW5hbnQgTWVkaWF0b3IgKjIwMDkqCgotICAgTWVkaWF0ZWQgYmV0d2VlbiBsYW5kbG9yZHMgYW5kIHRlbmFudHMgaW4gcHJlIGFuZCBwb3N0IGV2aWN0aW9uCiAgICBmaWxpbmcgcHJvY2Vzc2VzIGluIGlzc3VlcyBvZiByZXBhaXJzIGFuZCBtYWludGVuYW5jZSwgbGF0ZSByZW50LAogICAgbGVhc2UgdmlvbGF0aW9ucywgdXRpbGl0aWVzLCBwcml2YWN5IGlzc3VlcyBldGMKCiMgKipQdWJsaWNhdGlvbnMqKgoKIyMgKipKb3VybmFsIEFydGljbGVzKioKCjEuICBbQm91bnNhbmdhIGV0IGFsLCBVc2luZyBtYWNoaW5lIGxlYXJuaW5nIHRvIGlkZW50aWZ5IGZhY3RvcnMKICAgIGFzc29jaWF0ZWQgd2l0aCBwcmFjdGljZSBsb2NhdGlvbiBvZiB0aGUgaGVhbHRoY2FyZSB3b3JrZm9yY2UsIFJ1cmFsCiAgICBhbmQgUmVtb3RlIEhlYWx0aCwKICAgIDIwMjJdKGh0dHBzOi8vd3d3LnJyaC5vcmcuYXUvam91cm5hbC9hcnRpY2xlLzcwNTApe3RhcmdldD0iX2JsYW5rIgogICAgcmVsPSJub29wZW5lciBub3JlZmVycmVyIn0KCjIuICBbU21pbGV5IGV0IGFsLCBUaGUgMjAyMCBOYXRpb25hbCBOdXJzaW5nIFdvcmtmb3JjZSBTdXJ2ZXksIEpvdXJuYWwKICAgIG9mIE51cnNpbmcgUmVndWxhdGlvbiwKICAgIDIwMjBdKGh0dHBzOi8vd3d3LmpvdXJuYWxvZm51cnNpbmdyZWd1bGF0aW9uLmNvbS9hcnRpY2xlL1MyMTU1LTgyNTYoMjEpMDAwMjctMi9mdWxsdGV4dCl7dGFyZ2V0PSJfYmxhbmsiCiAgICByZWw9Im5vb3BlbmVyIG5vcmVmZXJyZXIifQoKICAgIC0gICBbcG9zdCBwdWJsaWNhdGlvbiBkYXNoYm9hcmQgSSBkZXNpZ25lZCBhbmQgY29kZWQgaW4gUgogICAgICAgIFNoaW55XShodHRwczovL2NsYXJrcnV0dGluZ2VyLnNoaW55YXBwcy5pby9kcmFmdGJvYXJkLyl7dGFyZ2V0PSJfYmxhbmsiCiAgICAgICAgcmVsPSJub29wZW5lciBub3JlZmVycmVyIn0KCiMjIFB1Ymxpc2hlZCBBbmFseXNpcwoKMS4gIFtVdGFoIE1lZGljYWwgRWR1Y2F0aW9uIENvdW5jaWwgKDIwMjEpLiBVdGFoJ3MgTWVudGFsIEhlYWx0aAogICAgV29ya2ZvcmNlLCAyMDIxLiBTYWx0IExha2UgQ2l0eSwgVVQuIFV0YWggTWVkaWNhbCBFZHVjYXRpb24gQ291bmNpbAogICAgKDIwMjApLl0oaHR0cHM6Ly91bWVjLnV0YWguZ292L3B1YmxpY2F0aW9ucy9tZW50YWwtaGVhbHRoLykKCjIuICBbVXRhaCdzIFBoeXNpY2lhbiBXb3JrZm9yY2UsIDIwMjAuIFNhbHQgTGFrZSBDaXR5LCBVVC4gVXRhaCBNZWRpY2FsCiAgICBFZHVjYXRpb24gQ291bmNpbAogICAgKDIwMjApLl0oaHR0cHM6Ly91bWVjLnV0YWguZ292L3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDIwLVBoeXNpY2lhbi1Xb3JrZm9yY2UtUmVwb3J0LWZpbmFsLnBkZikKCjMuICBbVXRhaCBTdXBwbHkgb2YgUmVnaXN0ZXJlZCBOdXJzZXMgYW5kIExpY2Vuc2VkIFByYWN0aWNhbAogICAgTnVyc2VzLCAyMDIwLiBTYWx0IExha2UgQ2l0eSwgVVQuIFV0YWggTWVkaWNhbCBFZHVjYXRpb24gQ291bmNpbAogICAgKDIwMjApLl0oaHR0cHM6Ly91bWVjLW51cnNpbmcudXRhaC5nb3Yvd3AtY29udGVudC91cGxvYWRzL1V0YWhSTi1MUE5TdXBwbHkyMDIwLUZpbmFsLnBkZikKCjQuICBbVXRhaCBOdXJzaW5nIERlbWFuZCAyMDIwLiBTYWx0IExha2UgQ2l0eSwgVVQuIFV0YWggTWVkaWNhbAogICAgRWR1Y2F0aW9uIENvdW5jaWwKICAgICgyMDE3KS5dKGh0dHBzOi8vdW1lYy1udXJzaW5nLnV0YWguZ292L3dwLWNvbnRlbnQvdXBsb2Fkcy9VdGFoUk5FbXBsb3ltZW50RGVtYW5kMjAyMC5wZGYpCgo1LiAgW1V0YWgncyBBZHZhbmNlZCBQcmFjdGljZSBSZWdpc3RlcmVkIE51cnNlIFdvcmtmb3JjZSwgMjAxNzogQSBTdHVkeQogICAgb2YgdGhlIFN1cHBseSBhbmQgRGlzdHJpYnV0aW9uIG9mIEFQUk5zIGluIFV0YWguIFNhbHQgTGFrZSBDaXR5LCBVVC4KICAgIFV0YWggTWVkaWNhbCBFZHVjYXRpb24gQ291bmNpbAogICAgKDIwMTYpLl0oaHR0cHM6Ly91bWVjLW51cnNpbmcudXRhaC5nb3Yvd3AtY29udGVudC91cGxvYWRzL0FQUk5fMjAxN19GSU5BTC5wZGYpCgo2LiAgW1V0YWgncyBQaHlzaWNpYW4gV29ya2ZvcmNlLCAyMDE2OiBBIFN0dWR5IG9mIHRoZSBTdXBwbHkgYW5kCiAgICBEaXN0cmlidXRpb24gb2YgUGh5c2ljaWFucyBpbiBVdGFoLiBTYWx0IExha2UgQ2l0eSwgVVQuIFV0YWggTWVkaWNhbAogICAgRWR1Y2F0aW9uIENvdW5jaWwKICAgICgyMDE2KS5dKGh0dHBzOi8vdW1lYy1udXJzaW5nLnV0YWguZ292L3dwLWNvbnRlbnQvdXBsb2Fkcy9BUFJOXzIwMTdfRklOQUwucGRmKQoKNy4gIFtTdXBwbHkgb2YgTnVyc2VzIGluIFV0YWg6IFRoZSAyMDE2IFN1cnZleSBVdGFoJ3MgUmVnaXN0ZXJlZCBOdXJzZXMuCiAgICBTYWx0IExha2UgQ2l0eSwgVVQuIFV0YWggTWVkaWNhbCBFZHVjYXRpb24gQ291bmNpbAogICAgKDIwMTMpLl0oaHR0cHM6Ly91bWVjLW51cnNpbmcudXRhaC5nb3Yvd3AtY29udGVudC91cGxvYWRzL1JOLXJlcG9ydC1maW5hbC11cGRhdGVkNS05LTIwMTYucGRmKQoKOC4gIFtVdGFoJ3MgQWR2YW5jZWQgUHJhY3RpY2UgUmVnaXN0ZXJlZCBOdXJzZSBXb3JrZm9yY2UsIDIwMTM6IEEgU3R1ZHkKICAgIG9mIHRoZSBTdXBwbHkgYW5kIERpc3RyaWJ1dGlvbiBvZiBBUFJOcyBpbiBVdGFoLiBTYWx0IExha2UgQ2l0eSwKICAgIFVULl0oaHR0cHM6Ly91bWVjLW51cnNpbmcudXRhaC5nb3Yvd3AtY29udGVudC91cGxvYWRzLzIwMTNBUFJOUmVwb3J0LnBkZikKCiMgUmVmZXJlbmNlcwoKIyMgW01pY2hhZWwgSy4gTWFnaWxsLCBNRF0oaHR0cHM6Ly93d3cudGhlYWJmbS5vcmcvYWJvdXQvYm9hcmQvbWljaGFlbC1rLW1hZ2lsbC1tZCkKClByb2Zlc3NvciBFbWVyaXR1cywgVW5pdmVyc2l0eSBvZiBVdGFoCgpEZXBhcnRtZW50IG9mIEZhbWlseSBhbmQgUHJldmVudGl2ZSBNZWRpY2luZQoKQ2hhaXIsIEFtZXJpY2FuIEJvYXJkIG9mIEZhbWlseSBNZWRpY2luZQoKW21pY2hhZWwubWFnaWxsXEBoc2MudXRhaC5lZHVdKG1haWx0bzptaWNoYWVsLm1hZ2lsbEBoc2MudXRhaC5lZHUpey5lbWFpbH0KCjM3NSBDaGlwZXRhIFdheSwgU3VpdGUgQQoKU2FsdCBMYWtlIENpdHksIFVUIDg0MTA4Cgo4MDEtNTU0LTM2NTMKCiMjIFtQYXVsIEIuIEphY2tzb25dKGh0dHBzOi8vd3d3LnV0YWhob3NwaXRhbHMub3JnL2NvbnRhY3QpCgpXb3JrZm9yY2UgQ29uc3VsdGFudAoKVXRhaCBIb3NwaXRhbCBBc3NvY2lhdGlvbgoKMjE4MCBTb3V0aCAxMzAwIEVhc3QsIFN1aXRlIDQ0MAoKU2FsdCBMYWtlIENpdHksIFV0YWggODQxMDYKCltqYWNrc29uamVubmFcQG1zbi5jb21dKG1haWx0bzpqYWNrc29uamVubmFAbXNuLmNvbSl7LmVtYWlsfQoKODAxLTUyMC0yMzc4CgojIyBbSmFuYSBCaXR0b24sIE1QQV0oaHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2luL2phbmFiaXR0b24vKQoKRXhlY3V0aXZlIERpcmVjdG9yLCBPcmVnb24gQ2VudGVyIGZvciBOdXJzaW5nCgpQcmVzaWRlbnQsIE5hdGlvbmFsIEZvcnVtIG9mIFN0YXRlIE51cnNpbmcgV29ya2ZvcmNlIENlbnRlcnMKCjUwMDAgTi4gV2lsbGFtZXR0ZSBCbHZkLiBNUyAxOTIKClBvcnRsYW5kLCBPUiA5NzIwMwoKMzYwLTYwOS0wMjIxCgpbamFuYS5iaXR0b25cQG9yZWdvbmNlbnRlcmZvcm51cnNpbmcub3JnXShtYWlsdG86amFuYS5iaXR0b25Ab3JlZ29uY2VudGVyZm9ybnVyc2luZy5vcmcpey5lbWFpbH0K</div>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+<script>
+$(document).ready(function () {
+  window.initializeSourceEmbed("resume.Rmd");
+  window.initializeCodeFolding("hide" === "show");
+});
+</script>
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3,h4,h5,h6",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
