@@ -16,7 +16,7 @@ editor_options:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
 ```
 
 # **Clark Ruttinger**
@@ -227,7 +227,7 @@ Salt Lake City, Utah, 84124
     programs available Coordination with community agencies to assure
     clients receipt of services.
 
-## Americorps
+## **Americorps**
 
 ### Wasatch Homeless Health Care- Care Coordinator *2002*
 
@@ -279,7 +279,7 @@ Salt Lake City, Utah, 84124
     selecting the best programs for funding from a competitive group of
     applicants.
 
-## **Salt Lake City Planning Commission**
+## **[Salt Lake City Planning Commission](https://www.slc.gov/boards/boards-commissions/planning-commission/)**
 
 ### Planning Commissioner *11.2011- 2019*
 
@@ -317,7 +317,7 @@ Salt Lake City, Utah, 84124
         Shiny](https://clarkruttinger.shinyapps.io/draftboard/){target="_blank"
         rel="noopener noreferrer"}
 
-## Published Analysis
+## **Published Analysis**
 
 1.  [Utah Medical Education Council (2021). Utah's Mental Health
     Workforce, 2021. Salt Lake City, UT. Utah Medical Education Council
@@ -353,9 +353,9 @@ Salt Lake City, Utah, 84124
     of the Supply and Distribution of APRNs in Utah. Salt Lake City,
     UT.](https://umec-nursing.utah.gov/wp-content/uploads/2013APRNReport.pdf)
 
-# References
+# **References**
 
-## [Michael K. Magill, MD](https://www.theabfm.org/about/board/michael-k-magill-md)
+## [Michael K. Magill,MD](https://www.theabfm.org/about/board/michael-k-magill-md)
 
 Professor Emeritus, University of Utah
 
