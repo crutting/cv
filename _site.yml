@@ -11,7 +11,7 @@ navbar:
       href: about.html
     - text: "Resume"
       href: resume.html
-    - test: "Presentations"
+    - text: "Presentations"
       href: presentations.html
 output:
   html_document:
