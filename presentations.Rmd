@@ -16,7 +16,7 @@ library(DT)
 
 A list of slide decks for presentations I have given
 
-```{r, echo=FALSE, results = FALSE, message=FALSE}
+```{r, echo=FALSE, results = TRUE, message=FALSE}
 df<- read_csv(here("data", "presentations.csv"))
 df<- df[-c(1,2,5),]
 df$url <- paste0("<a href='",df$`Presentation Link`,"'>",df$`Presentation Title`,"</a>")

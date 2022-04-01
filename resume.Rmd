@@ -17,9 +17,6 @@ editor_options:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
-
-# **Clark Ruttinger**
-
 # **Contact Information**
 
 4028 South 1400 East
@@ -201,7 +198,7 @@ Salt Lake City, Utah, 84124
 -   Medicaid specialist embedded at [Community Health Centers-
     Utah](https://www.chc-ut.org/).
 
-## The Road Home
+## **The Road Home**
 
 ### Grants Coordinator
 
@@ -289,7 +286,7 @@ Salt Lake City, Utah, 84124
 
     -   Commission Chair for the 2015 year.
 
-## **Community Action Program**
+## **[Community Action Program](https://www.utahca.org/)**
 
 ### Landlord/Tenant Mediator *2009*
 
@@ -353,47 +350,48 @@ Salt Lake City, Utah, 84124
     UT.](https://umec-nursing.utah.gov/wp-content/uploads/2013APRNReport.pdf)
 
 # **References**
+## Available Upon Request
 
-## [Michael K. Magill,MD](https://www.theabfm.org/about/board/michael-k-magill-md)
+<!-- ## [Michael K. Magill,MD](https://www.theabfm.org/about/board/michael-k-magill-md) -->
 
-Professor Emeritus, University of Utah
+<!-- Professor Emeritus, University of Utah -->
 
-Department of Family and Preventive Medicine
+<!-- Department of Family and Preventive Medicine -->
 
-Chair, American Board of Family Medicine
+<!-- Chair, American Board of Family Medicine -->
 
-[michael.magill\@hsc.utah.edu](mailto:michael.magill@hsc.utah.edu){.email}
+<!-- [michael.magill\@hsc.utah.edu](mailto:michael.magill@hsc.utah.edu){.email} -->
 
-375 Chipeta Way, Suite A
+<!-- 375 Chipeta Way, Suite A -->
 
-Salt Lake City, UT 84108
+<!-- Salt Lake City, UT 84108 -->
 
-801-554-3653
+<!-- 801-554-3653 -->
 
-## [Paul B. Jackson](https://www.utahhospitals.org/contact)
+<!-- ## [Paul B. Jackson](https://www.utahhospitals.org/contact) -->
 
-Workforce Consultant
+<!-- Workforce Consultant -->
 
-Utah Hospital Association
+<!-- Utah Hospital Association -->
 
-2180 South 1300 East, Suite 440
+<!-- 2180 South 1300 East, Suite 440 -->
 
-Salt Lake City, Utah 84106
+<!-- Salt Lake City, Utah 84106 -->
 
-[jacksonjenna\@msn.com](mailto:jacksonjenna@msn.com){.email}
+<!-- [jacksonjenna\@msn.com](mailto:jacksonjenna@msn.com){.email} -->
 
-801-520-2378
+<!-- 801-520-2378 -->
 
-## [Jana Bitton, MPA](https://www.linkedin.com/in/janabitton/)
+<!-- ## [Jana Bitton, MPA](https://www.linkedin.com/in/janabitton/) -->
 
-Executive Director, Oregon Center for Nursing
+<!-- Executive Director, Oregon Center for Nursing -->
 
-President, National Forum of State Nursing Workforce Centers
+<!-- President, National Forum of State Nursing Workforce Centers -->
 
-5000 N. Willamette Blvd. MS 192
+<!-- 5000 N. Willamette Blvd. MS 192 -->
 
-Portland, OR 97203
+<!-- Portland, OR 97203 -->
 
-360-609-0221
+<!-- 360-609-0221 -->
 
-[jana.bitton\@oregoncenterfornursing.org](mailto:jana.bitton@oregoncenterfornursing.org){.email}
+<!-- [jana.bitton\@oregoncenterfornursing.org](mailto:jana.bitton@oregoncenterfornursing.org){.email} -->
