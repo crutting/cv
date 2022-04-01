@@ -3,8 +3,8 @@ title: "Clark Ruttinger"
 ---
 - __Ocupation:__ "Director of Workforce Research"
 - __Hobbies:__ Woodworking, Vintage Vespas, Pop-up Trailers and Gardening. 
-- __LinkedIn:__ www.linkedin.com/in/clark-ruttinger
-- __Twitter:__ @ceruttinger
+- __LinkedIn:__ [clark-ruttinger](www.linkedin.com/in/clark-ruttinger)
+- __Twitter:__ [![Twitter URL](@ceruttinger)
 
 Here is a super cool photo of me. 
 
