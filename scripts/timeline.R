@@ -1,9 +1,3 @@
-# All packages used below must be installed first
-#library(devtools)
-#devtools::install_github("laresbernardo/lares")
-#library(lares)
-
-library(firatheme)
 library(ggplot2)
 library(here)
 library(tidyverse)
@@ -40,15 +34,14 @@ plot_timeline2 <- function(event, start, end = start + 1, label = NA, group = NA
   ) + labs(
     title = title,
     subtitle = subtitle, x = NULL, y = NULL, colour = NULL
-  # ) +
-  #   theme_fira() + theme(panel.background = element_rect(
-  #     fill = "white",
-  #     colour = NA
-  #   ), axis.ticks = element_blank(), panel.grid.major.x = element_line(
-  #     size = 0.25,
-  #     colour = "grey80"
-  #   )
-  )
+  )+ theme(
+    #axis.text=element_text(size=2), 
+    #axis.title=element_text(size=2), 
+    #plot.title=element_text(size=2), 
+    #legend.text=element_text(size=2), 
+    #legend.title=element_text(size=2)
+    text=element_text(size=10))   
+
   if (!is.na(cvlong$type)[1] | length(unique(cvlong$type)) >
       1) {
     p <- p + geom_line(aes(color = type), size = size) +
@@ -104,20 +97,10 @@ c("Committee Chair", "Salt Lake City Planning Commission", "Volunteer Experience
 c("Grant Reviewer", "U.S. Department of Health and Human Services-Health Resources and Services Division", "Volunteer Experience", "2011-01-01", today),
 c("Landlord- Tenant Mediator", "Community Action Program", "Volunteer Experience", "2009-01-01", "2009-12-31")
 ))
-### Edit until here ###
+
 
 
 colnames(cv) <- order
 colour <- c("red", "blue", "green")
-
-plot_timeline2(
-  event = cv$Role,
-  start = cv$Start,
-  end = cv$End,
-  label = cv$Place,
-  group = cv$Type,
-  save = FALSE,
-  subtitle = "Clark Ruttinger" # replace with your name
-)
 
 

@@ -6,7 +6,6 @@ output:
     number_sections: no
     toc_float: yes
     code_folding: hide
-    theme: lumen
     code_download: true
     fig_crop: no
     date: '''r format(sys.time(), ''%d %B, %Y'')'''
@@ -64,10 +63,10 @@ Salt Lake City, Utah, 84124
     Committee, The Utah Nurse Action Coalition and the Utah Organization
     of Nurse Leaders Academic Leadership Committee.
 
--   Serves in a consulting capacity with the University of Utah School
+-   [Serves in a consulting capacity with the University of Utah School
     of Nursing- on the HRSA ANEW grant- "Addressing Barriers to Primary
     Care Workforce Needs in Rural and Underserved Settings with
-    Academic-Clinical Partnerships and Innovations in Technology".
+    Academic-Clinical Partnerships and Innovations in Technology".](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiu6b6H-_H2AhUnLTQIHc4kDNcQFnoECAkQAQ&url=https%3A%2F%2Fgrants.hrsa.gov%2F2010%2Fweb2External%2FInterface%2FCommon%2FPublicWebLinkController.aspx%3FGrantNumber%3DT94HP32908%26WL_WEBLINK_ID%3D1&usg=AOvVaw3L5FVAtydxvfQEhMUDozcc)
 
 -   Consults with the University of Utah School of Medicine- "American
     Indian Health Workforce Plan".

@@ -11,6 +11,8 @@ navbar:
       href: resume.html
     - text: "Presentations"
       href: presentations.html
+    - text: "Timeline"
+      href: timeline.html
 output:
   html_document:
     theme: flatly

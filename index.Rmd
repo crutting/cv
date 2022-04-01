@@ -6,6 +6,6 @@ title: "Clark Ruttinger"
 - __LinkedIn:__ [clark-ruttinger](www.linkedin.com/in/clark-ruttinger)
 - __Twitter:__ [![Twitter URL](@ceruttinger)
 
-Here is a super cool photo of me. 
+Here is a super cool photo of me. w
 
 ![](Ruttingerheadshot.jpg)

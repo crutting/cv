@@ -4,8 +4,18 @@ author: "Clark Ruttinger"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-source(scripts/timeline.R)
+```{r, echo=FALSE, results = FALSE, message=FALSE}
+#fig.height= 3, fig.width= 1
+source("scripts/timeline.R")
+
+plot_timeline2(
+  event = cv$Role,
+  start = cv$Start,
+  end = cv$End,
+  label = cv$Place,
+  group = cv$Type,
+  save = FALSE,
+  subtitle = "Clark Ruttinger"
+)
 ```
 
