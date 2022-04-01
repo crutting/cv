@@ -9,6 +9,10 @@ navbar:
       href: projects.html  
     - text: "About Me"
       href: about.html
+    - text: "Resume"
+      href: resume.html
+    - test: "Presentations"
+      href: presentations.html
 output:
   html_document:
     theme: flatly
