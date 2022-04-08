@@ -6,7 +6,6 @@ output:
     number_sections: no
     toc_float: yes
     code_folding: hide
-    code_download: true
     fig_crop: no
     date: '''r format(sys.time(), ''%d %B, %Y'')'''
 editor_options: 
