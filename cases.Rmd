@@ -29,7 +29,9 @@ improve data. ![](images/messge4.png?display=inline-block)
 Specifically, they wanted to measure percent of Bachelors prepared
 nurses across the country.
 
-![](images/rec4.png) In 2015, I conducted the state's first RN workforce
+![](images/rec4.png) 
+
+In 2015, I conducted the state's first RN workforce
 supply survey. Analysis of this data found that 42% of the RN workforce
 was prepared at a bachelors level [(pg
 13).](https://umec-nursing.utah.gov/wp-content/uploads/UtahRN-LPNSupply2020-Final.pdf)
@@ -118,7 +120,8 @@ study](https://umec-nursing.utah.gov/wp-content/uploads/UtahRNEmploymentDemand20
 from existing state data sources that can be updated at future periods
 automatically by refreshing the source data.
 
-![](images/sourcedata.png?display=inline-block)
+<!-- ![](images/sourcedata.png?display=inline-block) -->
+<img src="images/sourcedata.png" style="display: inline-block; margin: 5" />
 
 This design allows for a persistent dashboard application to be created
 to update the employer demand analysis when needed. My team and I
@@ -151,7 +154,8 @@ published by the U.S. Census. QWIs provide local labor market statistics
 by industry, worker demographics, employer, age and size. The source
 data are unique job-level data that link workers to their employers.
 
-![](images/MDSQWIcomp.png?display=inline-block) 
+<!-- ![](images/MDSQWIcomp.png?display=inline-block)  -->
+<img src="images/MDSQWIcomp.png" style="display: inline-block; margin: 5" />
 
 The nursing employment demand report goes
 into detail on the strengths and weaknesses of this methodology. My
