@@ -2,17 +2,8 @@
 output: 
   flexdashboard::flex_dashboard: 
     orientation: rows
-    social: menu
-    source_code: embed
-    theme: readable
-    vertical_layout: scroll
-editor_options: 
-  markdown: 
-    wrap: 72
 ---
-
 ## Cases {.tabset}
-
 ### 80 % BSN by 2020
 
 In 2008, The Robert Wood Johnson Foundation (RWJF) and the Institute of
