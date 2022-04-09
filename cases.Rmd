@@ -2,8 +2,13 @@
 output: 
   flexdashboard::flex_dashboard: 
     orientation: rows
+editor_options: 
+  markdown: 
+    wrap: 72
 ---
+
 ## Cases {.tabset}
+
 ### 80 % BSN by 2020
 
 In 2008, The Robert Wood Johnson Foundation (RWJF) and the Institute of
@@ -20,11 +25,11 @@ improve data. ![](images/messge4.png?display=inline-block)
 Specifically, they wanted to measure percent of Bachelors prepared
 nurses across the country.
 
-![](images/rec4.png) 
+![](images/rec4.png)
 
-In 2015, I conducted the state's first RN workforce
-supply survey. Analysis of this data found that 42% of the RN workforce
-was prepared at a bachelors level [(pg
+In 2015, I conducted the state's first RN workforce supply survey.
+Analysis of this data found that 42% of the RN workforce was prepared at
+a bachelors level [(pg
 13).](https://umec-nursing.utah.gov/wp-content/uploads/UtahRN-LPNSupply2020-Final.pdf)
 
 In 2017, [Joanne Spetz,
@@ -112,7 +117,8 @@ from existing state data sources that can be updated at future periods
 automatically by refreshing the source data.
 
 <!-- ![](images/sourcedata.png?display=inline-block) -->
-<img src="images/sourcedata.png" style="display: inline-block; margin: 5" />
+
+<img src="images/sourcedata.png" style="display: inline-block; margin: 5"/>
 
 This design allows for a persistent dashboard application to be created
 to update the employer demand analysis when needed. My team and I
@@ -146,29 +152,81 @@ by industry, worker demographics, employer, age and size. The source
 data are unique job-level data that link workers to their employers.
 
 <!-- ![](images/MDSQWIcomp.png?display=inline-block)  -->
-<img src="images/MDSQWIcomp.png" style="display: inline-block; margin: 5" />
 
-The nursing employment demand report goes
-into detail on the strengths and weaknesses of this methodology. My
-personal thoughts as a data analyst and designer are that the
-methodology utilizes defined questions and equations from national
-sources to produce a standardized analysis that can be replicated in any
-state where someone can connect state licensing records and supplemental
-workforce supply surveys to state Unemployment Insurance records. The
-analysis is not dependent on arbitrary participation rates from health
-system administrators. It takes advantage of transactional data already
-being produced by state government to add valuable system insights.
+<img src="images/MDSQWIcomp.png" style="display: inline-block; margin: 5"/>
+
+The nursing employment demand report goes into detail on the strengths
+and weaknesses of this methodology. My personal thoughts as a data
+analyst and designer are that the methodology utilizes defined questions
+and equations from national sources to produce a standardized analysis
+that can be replicated in any state where someone can connect state
+licensing records and supplemental workforce supply surveys to state
+Unemployment Insurance records. The analysis is not dependent on
+arbitrary participation rates from health system administrators. It
+takes advantage of transactional data already being produced by state
+government to add valuable system insights.
 
 ### Operationalizing Supply Surveys
 
-You can also embed plots, for example:
+In 2010 I was hired by the [Utah Medical Education
+Council](https://umec.utah.gov) to design, print, fold and mail out
+thousands of paper surveys a year by hand. Back then I also built my own
+data entry data bases and manually entered all of my survey responses. I
+would then clean and process the data using SPSS and Excel. Finally, I
+would type up my analysis and paste in all of the tables, charts and
+graphs into a PDF and send that to be printed and spiral bound. I've
+taught others this process while simultaneously making small
+improvements every year since. The problem here is that we are using
+20th century tools to do work that could be much improved using modern
+analytics tools. As I looked at our past work, I found that our response
+rates were begining to tank. We went from high 60% range responses in
+the first decade of surveying the health workforce with mailed paper
+surveys to the high 20% range by 2020. While this is still a statistically valid sample representing the state of Utah, over time we are losing granularity to describe and model health professions at geographic levels below the entire state such as zip codes or census tracts and further analysis by sub specialty or work setting becomes more difficult. No professions are surveyed as much as health care professionals. They are over saturated and tired of responding to surveys.
 
-Note that the `echo = FALSE` parameter was added to the code chunk to
-prevent printing of the R code that generated the plot.
+**UMEC Health Profession Supply Survey Response Rates 1997 to 2020**
+![](images/surveyresponse.png) in 2020 I transitioned our data
+collection process to be fully online. Now I send out invitations to
+take our surveys to the email addresses on file with the state
+professional licensing records.
+
+The survey pictured is one of the last paper surveys to ever be returned
+to the UMEC. This happens every so often. I get a response two years
+after I sent out the survey (also a year after I published the results
+of the survey). It always makes me laugh a little and wonder why the
+person decided to send in the response.
+
+![](images/rnsurvey.jpg)
+
+Modernization of our data collection process has allowed us to focus
+more time on more advanced analytics and informatics. Last year my team
+and I modernized our analysis platform with a data warehouse built in an
+AWS cloud environment We produced our most recent health profession
+workforce survey on U[tah's Mental Health
+workforce](https://umec.utah.gov/publications/mental-health/) using
+Python and R and piped the analysis to dashboards and report templates
+in Tableau and R Shiny. This work serves as a code base for us to refine
+with new health professions analysis as we produce them. We are
+currently working on an update to our APRN workforce study that will
+iterate and improve on the templates built for our Mental Health
+workforce analysis
+
+We have also began to explore application of machine learning to the
+data we have available to us. From the work my team and I did to clean
+and standardize our historic data, one of my analysts decided to use our
+datasets for his capstone project to complete his Masters of Statistics.
+We ended up getting a paper published in 2022 from his work, in an
+international health research journal on [using ML to predict rural
+practice decision in the health
+workforce](https://www.rrh.org.au/journal/article/7050){target="_blank"
+rel="noopener noreferrer"} We are excited to continue to build off of
+this work as we further automate our data collection, cleaning,
+transformation and storage processes.
 
 ### IBM Utah Teamcare Model
 
-This one
+We built a graph database in our cloud environment to explore
+connections and patterns and use them in our workforce projection
+modeling.
 
 ### National Forum Data Interconnection
 
@@ -176,4 +234,17 @@ This one as well
 
 ### Utah Health Workforce Coalition
 
-and this
+This past year I participated with a coalition of healthcare
+stakeholders across the state to develop a strategic plan to further
+improve data quality by integrating health workforce supply survey
+collection with the licensing process in the state and creating a broad
+council of policy makers across the state to guide health workforce
+policy analysis. Out of this plan, Representative Norman Thurston has
+filed [HB 176 The Utah Health Workforce
+Act.](https://le.utah.gov/~2022/bills/static/HB0176.html) I'm hopeful
+for the improvements that will come with the passage of this act! I look
+forward to what the changes will bring in terms of improved
+collaboration in health policy in Utah. We are moving from a situation
+where everyone is touching different parts of the elephant to a a form
+more like a beehive where we are working together for common goals.
+Appropriate for the beehive state!

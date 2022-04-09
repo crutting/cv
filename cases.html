@@ -13,8 +13,8 @@
 
 <title>cases.knit</title>
 
-<script src="site_libs/header-attrs-2.10/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -57,6 +57,7 @@ if (window.hljs) {
 
 
 
+
 <link rel="stylesheet" href="style.css" type="text/css" />
 
 
@@ -81,6 +82,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -233,7 +237,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -280,16 +284,52 @@ $(document).ready(function () {
 <h2 class="tabset">Cases</h2>
 <div id="bsn-by-2020" class="section level3">
 <h3>80 % BSN by 2020</h3>
-<p>In 2008, The Robert Wood Johnson Foundation (RWJF) and the Institute of Medicine (IOM) launched a two-year initiative to assess and transform the nursing profession. In 2010, the IOM released <a href="https://www.nursingworld.org/practice-policy/iom-future-of-nursing-report/">The Future of Nursing: Leading Change, Advancing Health</a> with the purpose of producing a report that would make recommendations for an action-oriented blueprint for the future of nursing.</p>
-<p>One of the messages from the report was the all too prescient call to improve data. <img src="images/messge4.png?display=inline-block" /></p>
-<p>Specifically, they wanted to measure percent of Bachelors prepared nurses across the country.</p>
+<p>In 2008, The Robert Wood Johnson Foundation (RWJF) and the Institute
+of Medicine (IOM) launched a two-year initiative to assess and transform
+the nursing profession. In 2010, the IOM released <a
+href="https://www.nursingworld.org/practice-policy/iom-future-of-nursing-report/">The
+Future of Nursing: Leading Change, Advancing Health</a> with the purpose
+of producing a report that would make recommendations for an
+action-oriented blueprint for the future of nursing.</p>
+<p>One of the messages from the report was the all too prescient call to
+improve data. <img src="images/messge4.png?display=inline-block" /></p>
+<p>Specifically, they wanted to measure percent of Bachelors prepared
+nurses across the country.</p>
 <p><img src="images/rec4.png" /></p>
-<p>In 2015, I conducted the state’s first RN workforce supply survey. Analysis of this data found that 42% of the RN workforce was prepared at a bachelors level <a href="https://umec-nursing.utah.gov/wp-content/uploads/UtahRN-LPNSupply2020-Final.pdf">(pg 13).</a></p>
-<p>In 2017, <a href="https://nepincollaborative.org/wp-content/uploads/2018/07/Spetz-2018-BSN-80-percent-forecast.pdf">Joanne Spetz, PhD</a> of the <a href="https://healthpolicy.ucsf.edu/philip-r-lee-institute-health-policy-studies">Philip R. Lee Institute for Health Policy Studies, University of California, San Francisco</a> analyzed how far that goal was from being actualized nationally by creating a projection model of bachelors prepared nurses in the national nursing workforce using the <a href="https://www.census.gov/programs-surveys/acs">American Community Survey</a>(ACS).</p>
-<p>Inspired by Dr. Spetz’ work, my team and I created an <a href="https://umec-nursing.utah.gov/bsn-projections/">interactive projection</a> of the Utah nursing workforce using Utah sources for the projection rather than the ACS. The projection model allows a user to modify the inputs to the model to examine how altering these input variables affects the projected bachelors prepared workforce percentage. The baseline projection showed Utah going from 55% bachelors prepared in 2017 to 61% by 2020. Even projecting out as far as 2035, Utah only stood to be at a 72% bachelors prepared workforce, assuming that none of the factors in the projection model changed. When my team and I surveyed the Utah RN workforce in 2020, we found that the bachelors prepared workforce had risen to 56.2% <a href="https://umec-nursing.utah.gov/wp-content/uploads/UtahRN-LPNSupply2020-Final.pdf">(pg 29).</a></p>
+<p>In 2015, I conducted the state’s first RN workforce supply survey.
+Analysis of this data found that 42% of the RN workforce was prepared at
+a bachelors level <a
+href="https://umec-nursing.utah.gov/wp-content/uploads/UtahRN-LPNSupply2020-Final.pdf">(pg
+13).</a></p>
+<p>In 2017, <a
+href="https://nepincollaborative.org/wp-content/uploads/2018/07/Spetz-2018-BSN-80-percent-forecast.pdf">Joanne
+Spetz, PhD</a> of the <a
+href="https://healthpolicy.ucsf.edu/philip-r-lee-institute-health-policy-studies">Philip
+R. Lee Institute for Health Policy Studies, University of California,
+San Francisco</a> analyzed how far that goal was from being actualized
+nationally by creating a projection model of bachelors prepared nurses
+in the national nursing workforce using the <a
+href="https://www.census.gov/programs-surveys/acs">American Community
+Survey</a>(ACS).</p>
+<p>Inspired by Dr. Spetz’ work, my team and I created an <a
+href="https://umec-nursing.utah.gov/bsn-projections/">interactive
+projection</a> of the Utah nursing workforce using Utah sources for the
+projection rather than the ACS. The projection model allows a user to
+modify the inputs to the model to examine how altering these input
+variables affects the projected bachelors prepared workforce percentage.
+The baseline projection showed Utah going from 55% bachelors prepared in
+2017 to 61% by 2020. Even projecting out as far as 2035, Utah only stood
+to be at a 72% bachelors prepared workforce, assuming that none of the
+factors in the projection model changed. When my team and I surveyed the
+Utah RN workforce in 2020, we found that the bachelors prepared
+workforce had risen to 56.2% <a
+href="https://umec-nursing.utah.gov/wp-content/uploads/UtahRN-LPNSupply2020-Final.pdf">(pg
+29).</a></p>
 <p>The value of this model is two fold:</p>
 <ol style="list-style-type: decimal">
-<li>Demonstration of underlying factors involved in measuring the state’s system for producing nurses. The model uses data from several sources to produce the projection.</li>
+<li>Demonstration of underlying factors involved in measuring the
+state’s system for producing nurses. The model uses data from several
+sources to produce the projection.</li>
 </ol>
 <ul>
 <li><p>UMEC RN supply surveys</p>
@@ -304,42 +344,152 @@ $(document).ready(function () {
 <ul>
 <li>Current workforce by age</li>
 </ul></li>
-<li><p>Utah Population Projections from census and state demographers</p></li>
-<li><p>National Council of State Boards of Nursing national estimates of RNs</p></li>
+<li><p>Utah Population Projections from census and state
+demographers</p></li>
+<li><p>National Council of State Boards of Nursing national estimates of
+RNs</p></li>
 </ul>
 <ol start="2" style="list-style-type: decimal">
-<li>Ability to produce counterfactuals to examine best the best strategy of attaining a defined goal for the system.</li>
+<li>Ability to produce counterfactuals to examine best the best strategy
+of attaining a defined goal for the system.</li>
 </ol>
 <ul>
-<li><p>What is the result in the model of adjusting for the impacts on enrollment from the pandemic ?</p></li>
-<li><p>What will happen as the model is adjusted for anticipated future retirements?</p></li>
-<li><p>Do targeted increases in the number of available seats in programs result in more retained graduates of specific types?</p></li>
+<li><p>What is the result in the model of adjusting for the impacts on
+enrollment from the pandemic ?</p></li>
+<li><p>What will happen as the model is adjusted for anticipated future
+retirements?</p></li>
+<li><p>Do targeted increases in the number of available seats in
+programs result in more retained graduates of specific types?</p></li>
 </ul>
-<p>Ultimately further work needs to be done to take this from a single use specific model to an operationalized and automated model for projecting the future state of any point in the system.</p>
+<p>Ultimately further work needs to be done to take this from a single
+use specific model to an operationalized and automated model for
+projecting the future state of any point in the system.</p>
 </div>
 <div id="nursing-employment-demand" class="section level3">
 <h3>Nursing Employment Demand</h3>
-<p>Out of the <a href="https://www.nursingworld.org/practice-policy/iom-future-of-nursing-report/">The Future of Nursing 2010- 2020</a> report the The Robert Wood Johnson Foundation and AARP created the Campaign for Action. Through this campaign an <a href="https://campaignforaction.org/state/utah/">action coalition was created in each state</a> to implement the goals of the Future of Nursing Report.</p>
-<p>In 2018, the Utah nurse action coalition worked with Utah Legislators to produce <a href="https://le.utah.gov/~2018/bills/static/SB0147.html">S.B. 147</a>. This nursing initiative required the UMEC to produce a nursing demand study for the state and for funding of nurse education programs to be tied to identified future nursing employment needs.</p>
-<p>I developed the methodology and data linkages to produce a <a href="https://umec-nursing.utah.gov/wp-content/uploads/UtahRNEmploymentDemand2020.pdf">nursing employment demand study</a> from existing state data sources that can be updated at future periods automatically by refreshing the source data.</p>
+<p>Out of the <a
+href="https://www.nursingworld.org/practice-policy/iom-future-of-nursing-report/">The
+Future of Nursing 2010- 2020</a> report the The Robert Wood Johnson
+Foundation and AARP created the Campaign for Action. Through this
+campaign an <a href="https://campaignforaction.org/state/utah/">action
+coalition was created in each state</a> to implement the goals of the
+Future of Nursing Report.</p>
+<p>In 2018, the Utah nurse action coalition worked with Utah Legislators
+to produce <a
+href="https://le.utah.gov/~2018/bills/static/SB0147.html">S.B. 147</a>.
+This nursing initiative required the UMEC to produce a nursing demand
+study for the state and for funding of nurse education programs to be
+tied to identified future nursing employment needs.</p>
+<p>I developed the methodology and data linkages to produce a <a
+href="https://umec-nursing.utah.gov/wp-content/uploads/UtahRNEmploymentDemand2020.pdf">nursing
+employment demand study</a> from existing state data sources that can be
+updated at future periods automatically by refreshing the source
+data.</p>
 <!-- ![](images/sourcedata.png?display=inline-block) -->
-<p><img src="images/sourcedata.png" style="display: inline-block; margin: 5" /></p>
-<p>This design allows for a persistent dashboard application to be created to update the employer demand analysis when needed. My team and I produced our baseline report in 2020. It captured the first quarter of the pandemic. We are currently working on a release of an update to the analysis that will look back on what happened over the pandemic time period (Q2 2020 through Q3 2021).</p>
-<p>I developed the methodology for this employer demand study from sources identified through my own literature review. The two primary guiding sources are quite disparate in nature but compliment and inform each other very well.</p>
-<p>The first is the National Forum of State Nursing Workforce Centers <a href="https://nursingworkforcecenters.org/wp-content/uploads/2021/12/Nurse_Demand_MDS_RevisedDecember2020.pdf">minimum data set recommendations for demand</a>. These are a set of recommended questions to be asked of nursing employers in each state to measure nursing employer demand. Typically these questions are deployed through a survey methodology to identified nursing employers in a state. I produced demand studies for the state of Utah using a <a href="https://umec-nursing.utah.gov/nursing-demand/">survey methodology in 2015 and 2018.</a> The shortcomings of this methodology, namely that it is very time intensive to gather data in this manner, made me want to look for a better way to produce a demand study into the future.</p>
-<p>The second source for the methodology I developed are the <a href="https://lehd.ces.census.gov/doc/QWI_101.pdf">Quarterly Workforce Indicators (QWI)</a> published by the U.S. Census. QWIs provide local labor market statistics by industry, worker demographics, employer, age and size. The source data are unique job-level data that link workers to their employers.</p>
+<p><img src="images/sourcedata.png" style="display: inline-block; margin: 5"/></p>
+<p>This design allows for a persistent dashboard application to be
+created to update the employer demand analysis when needed. My team and
+I produced our baseline report in 2020. It captured the first quarter of
+the pandemic. We are currently working on a release of an update to the
+analysis that will look back on what happened over the pandemic time
+period (Q2 2020 through Q3 2021).</p>
+<p>I developed the methodology for this employer demand study from
+sources identified through my own literature review. The two primary
+guiding sources are quite disparate in nature but compliment and inform
+each other very well.</p>
+<p>The first is the National Forum of State Nursing Workforce Centers <a
+href="https://nursingworkforcecenters.org/wp-content/uploads/2021/12/Nurse_Demand_MDS_RevisedDecember2020.pdf">minimum
+data set recommendations for demand</a>. These are a set of recommended
+questions to be asked of nursing employers in each state to measure
+nursing employer demand. Typically these questions are deployed through
+a survey methodology to identified nursing employers in a state. I
+produced demand studies for the state of Utah using a <a
+href="https://umec-nursing.utah.gov/nursing-demand/">survey methodology
+in 2015 and 2018.</a> The shortcomings of this methodology, namely that
+it is very time intensive to gather data in this manner, made me want to
+look for a better way to produce a demand study into the future.</p>
+<p>The second source for the methodology I developed are the <a
+href="https://lehd.ces.census.gov/doc/QWI_101.pdf">Quarterly Workforce
+Indicators (QWI)</a> published by the U.S. Census. QWIs provide local
+labor market statistics by industry, worker demographics, employer, age
+and size. The source data are unique job-level data that link workers to
+their employers.</p>
 <!-- ![](images/MDSQWIcomp.png?display=inline-block)  -->
-<p><img src="images/MDSQWIcomp.png" style="display: inline-block; margin: 5" /></p>
-<p>The nursing employment demand report goes into detail on the strengths and weaknesses of this methodology. My personal thoughts as a data analyst and designer are that the methodology utilizes defined questions and equations from national sources to produce a standardized analysis that can be replicated in any state where someone can connect state licensing records and supplemental workforce supply surveys to state Unemployment Insurance records. The analysis is not dependent on arbitrary participation rates from health system administrators. It takes advantage of transactional data already being produced by state government to add valuable system insights.</p>
+<p><img src="images/MDSQWIcomp.png" style="display: inline-block; margin: 5"/></p>
+<p>The nursing employment demand report goes into detail on the
+strengths and weaknesses of this methodology. My personal thoughts as a
+data analyst and designer are that the methodology utilizes defined
+questions and equations from national sources to produce a standardized
+analysis that can be replicated in any state where someone can connect
+state licensing records and supplemental workforce supply surveys to
+state Unemployment Insurance records. The analysis is not dependent on
+arbitrary participation rates from health system administrators. It
+takes advantage of transactional data already being produced by state
+government to add valuable system insights.</p>
 </div>
 <div id="operationalizing-supply-surveys" class="section level3">
 <h3>Operationalizing Supply Surveys</h3>
-<p>You can also embed plots, for example:</p>
-<p>Note that the <code>echo = FALSE</code> parameter was added to the code chunk to prevent printing of the R code that generated the plot.</p>
+<p>In 2010 I was hired by the <a href="https://umec.utah.gov">Utah
+Medical Education Council</a> to design, print, fold and mail out
+thousands of paper surveys a year by hand. Back then I also built my own
+data entry data bases and manually entered all of my survey responses. I
+would then clean and process the data using SPSS and Excel. Finally, I
+would type up my analysis and paste in all of the tables, charts and
+graphs into a PDF and send that to be printed and spiral bound. I’ve
+taught others this process while simultaneously making small
+improvements every year since. The problem here is that we are using
+20th century tools to do work that could be much improved using modern
+analytics tools. As I looked at our past work, I found that our response
+rates were begining to tank. We went from high 60% range responses in
+the first decade of surveying the health workforce with mailed paper
+surveys to the high 20% range by 2020. While this is still a
+statistically valid sample representing the state of Utah, over time we
+are losing granularity to describe and model health professions at
+geographic levels below the entire state such as zip codes or census
+tracts and further analysis by sub specialty or work setting becomes
+more difficult. No professions are surveyed as much as health care
+professionals. They are over saturated and tired of responding to
+surveys.</p>
+<p><strong>UMEC Health Profession Supply Survey Response Rates 1997 to
+2020</strong> <img src="images/surveyresponse.png" /> in 2020 I
+transitioned our data collection process to be fully online. Now I send
+out invitations to take our surveys to the email addresses on file with
+the state professional licensing records.</p>
+<p>The survey pictured is one of the last paper surveys to ever be
+returned to the UMEC. This happens every so often. I get a response two
+years after I sent out the survey (also a year after I published the
+results of the survey). It always makes me laugh a little and wonder why
+the person decided to send in the response.</p>
+<p><img src="images/rnsurvey.jpg" /></p>
+<p>Modernization of our data collection process has allowed us to focus
+more time on more advanced analytics and informatics. Last year my team
+and I modernized our analysis platform with a data warehouse built in an
+AWS cloud environment We produced our most recent health profession
+workforce survey on U<a
+href="https://umec.utah.gov/publications/mental-health/">tah’s Mental
+Health workforce</a> using Python and R and piped the analysis to
+dashboards and report templates in Tableau and R Shiny. This work serves
+as a code base for us to refine with new health professions analysis as
+we produce them. We are currently working on an update to our APRN
+workforce study that will iterate and improve on the templates built for
+our Mental Health workforce analysis</p>
+<p>We have also began to explore application of machine learning to the
+data we have available to us. From the work my team and I did to clean
+and standardize our historic data, one of my analysts decided to use our
+datasets for his capstone project to complete his Masters of Statistics.
+We ended up getting a paper published in 2022 from his work, in an
+international health research journal on <a
+href="https://www.rrh.org.au/journal/article/7050" target="_blank"
+rel="noopener noreferrer">using ML to predict rural practice decision in
+the health workforce</a> We are excited to continue to build off of this
+work as we further automate our data collection, cleaning,
+transformation and storage processes.</p>
 </div>
 <div id="ibm-utah-teamcare-model" class="section level3">
 <h3>IBM Utah Teamcare Model</h3>
-<p>This one</p>
+<p>We built a graph database in our cloud environment to explore
+connections and patterns and use them in our workforce projection
+modeling.</p>
 </div>
 <div id="national-forum-data-interconnection" class="section level3">
 <h3>National Forum Data Interconnection</h3>
@@ -347,7 +497,20 @@ $(document).ready(function () {
 </div>
 <div id="utah-health-workforce-coalition" class="section level3">
 <h3>Utah Health Workforce Coalition</h3>
-<p>and this</p>
+<p>This past year I participated with a coalition of healthcare
+stakeholders across the state to develop a strategic plan to further
+improve data quality by integrating health workforce supply survey
+collection with the licensing process in the state and creating a broad
+council of policy makers across the state to guide health workforce
+policy analysis. Out of this plan, Representative Norman Thurston has
+filed <a href="https://le.utah.gov/~2022/bills/static/HB0176.html">HB
+176 The Utah Health Workforce Act.</a> I’m hopeful for the improvements
+that will come with the passage of this act! I look forward to what the
+changes will bring in terms of improved collaboration in health policy
+in Utah. We are moving from a situation where everyone is touching
+different parts of the elephant to a a form more like a beehive where we
+are working together for common goals. Appropriate for the beehive
+state!</p>
 </div>
 </div>
 
