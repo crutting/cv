@@ -326,7 +326,7 @@ Current work is focused on three aims:
 
 We are currently developing and submitting research proposals related to each of these aims. the team is also conducting literature review on the application of machine learning to claims databases to explore how we want to approach loading the source data on patient populations into the model as patient archetypes based on primary care utilization. 
 
-Over the last year, I built a [graph database](https://medium.com/@timo.klimmer/what-the-heck-is-a-graph-database-cd92ae041b5a)target="_blank"} of three years of data from the [Utah All Payers Claims Database](https://stats.health.utah.gov/about-the-data/apcd/){target="_blank"} to explore how to create patient archetypes within the Utah population,  clustered by utilization patterns to produce a list of population types to represent patients in the model. 
+Over the last year, I built a [graph database](https://medium.com/@timo.klimmer/what-the-heck-is-a-graph-database-cd92ae041b5a){target="_blank"} of three years of data from the [Utah All Payers Claims Database](https://stats.health.utah.gov/about-the-data/apcd/){target="_blank"} to explore how to create patient archetypes within the Utah population,  clustered by utilization patterns to produce a list of population types to represent patients in the model. 
 
 <!-- ### National Forum Data Interconnection -->
 
@@ -401,7 +401,7 @@ With our strategic plan in hand and the obvious need demonstrated by the
 pandemic, we approached Utah Representative Norman Thurston, who I had
 been having discussions with about this topic for years and asked him if
 he would consider a bill. He was of course already well aware of our
-work and well prepared to take this plan and run with it.[HB 176 The
+work and well prepared to take this plan and run with it. [HB 176 The
 Utah Health Workforce
 Act.](https://le.utah.gov/~2022/bills/static/HB0176.html) was pased with
 the 2022 Utah Legislative session with broad support and no substantive
