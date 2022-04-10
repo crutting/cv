@@ -328,9 +328,9 @@ We are currently developing and submitting research proposals related to each of
 
 Over the last year, I built a [graph database](https://medium.com/@timo.klimmer/what-the-heck-is-a-graph-database-cd92ae041b5a)target="_blank"} of three years of data from the [Utah All Payers Claims Database](https://stats.health.utah.gov/about-the-data/apcd/){target="_blank"} to explore how to create patient archetypes within the Utah population,  clustered by utilization patterns to produce a list of population types to represent patients in the model. 
 
-### National Forum Data Interconnection
+<!-- ### National Forum Data Interconnection -->
 
-This one as well
+<!-- This one as well -->
 
 ### Utah Health Workforce Coalition
 
