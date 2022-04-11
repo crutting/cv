@@ -468,3 +468,18 @@ We are also working to interconnect additional government, public and private da
 ![](images/futureschema.png)
 
 Long term intentions are to map to a standard such as the [OMOP Common Data Model](https://www.ohdsi.org/data-standardization/) so that we can produce more standardized analysis that can be replicated and compared across the country. 
+
+<!-- ### Modeling a Graph Database in NEO4J -->
+
+<!-- Out of the application design engagement my research team was awarded with IBM, we began to develop an understanding of what we needed to do to create a dataset representative of all primary care service needs in the population.  -->
+
+<!-- As I attended conferences and networked with people about our modeling ideas, I met a brilliant nurse informaticist working for the VA a the time named Stephen Weaver who suggested that I look into using a graph database as the solution.  -->
+
+<!-- As the pandemic hit and we were all isolated at home, Stephen and I decided to have weekly Zoom meetings to talk about ideas and work in a graph database platform called NEO4J together.  -->
+
+<!-- We decided that our approach would be to model a graph databse of 3 years of the states APCD so that we could easily run various clustering machine learning algorithms to look for utilization patterns in the data to identify patient archetypes in the population.  This approach had several benefits.  -->
+
+<!-- 1.  The NEO4J Community Edition is free and open source. This allowed us to build our prototype with only the cost of the sweat equity we were willing to contribute.   -->
+
+<!-- 2.   NEO4J Community Edition also comes as a server version that can be deployed in an AWS environment and accessed through a web browser with a login. This allowed us to securely load and host our graph on a domain secured by the State of Utah that we could allow specific members of our research team to access so that we could continue to work together while we were all living through a global pandemic.  -->
+
