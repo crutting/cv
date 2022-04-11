@@ -423,3 +423,51 @@ collaboration in making health policy in Utah. We are moving from a
 situation where everyone is touching different parts of the elephant to
 a a form more like a beehive where we are working together for common
 goals. Quite appropriate for the Beehive State!
+
+
+
+### Modeling a Health Workforce Data Warehouse
+
+For all of the survey work I've done over the last 12 years, I have designed and built data entry databases in Microsoft access or survey software like [SNAP](https://www.snapsurveys.com){target="_blank"} for OCR scanning and [Qualtrics](https://www.qualtrics.com){target="_blank"} for online surveys. I provided data entry databases to contracted companies for larger projects like the [2015 Utah RN Workforce Supply Survey](https://umec-nursing.utah.gov/wp-content/uploads/RN-report-final-updated5-9-2016.pdf){target="_blank"}. I taught interns the process as I operationalized it over time.
+
+As I finished my MBA electives with a certificate in information systems I became interested in how to consolidate and better conect annual surveys I had administered over years at the UMEC.
+
+As a [final project ](https://docs.google.com/presentation/d/1CGLkNZEPoMEMbPDFDQXgLmKfQRNHwxla/edit?usp=sharing&ouid=105000908584582998954&rtpof=true&sd=true){target="_blank"} for a class in data warehouse design, I designed a small data warehouse to store a survey collected from an annual survey of nursing deans across the state of Utah in collaboration with the [Utah Organization of Nurse Leaders, Academic Leadership Committe](https://utahnurseleaders.nursingnetwork.com){target="_blank"}.
+
+I developed that work with my team at the UMEC into a Tableau dashboard about [Utah Nursing Workforce Education](https://umec-nursing.utah.gov/nursing-education/){target="_blank"}. This survey is updated annually as data is submitted from nursing programs.
+
+in July of 2018 I hired a computer science undergrad as an intern and I assigned one of my research analysts to work with me to design a data warehouse of all of the health professional workforce supply surveys that had been produced by the UMEC since they started collecting them in 1997.
+
+These surveys had been administered in different years to differen health professions. With each survey administration there were small changes made to survey instruments to add questions or change wording. Because of regualr staff turnover, there had never been any standardization to the survey process.
+
+I started with a literature review to find database designs that solved a similar problem of using a [dimensional data warehouse to standardize historical survey data](https://nces.ed.gov/FCSM/pdf/II_B_Yost_FCSM1999.pdf){target="_blank"}.
+
+
+The solution we built using MySQL contained 6 tables in total:
+
+1.  The fact table stores all the responses for each respondent.
+
+2.  Dim Survey stores survey information such as the surveys’ types, year, population, number of respondents and weight.
+Dim Respondent stores respondent information such as their license numbers, NPI, gender, date of birth and age.
+
+3.  Dim Question stores question texts and their corresponding master variables for standardization.
+
+4.  Dim Response stores response texts for certain questions that provides fixed answers for respondents to choose.
+
+5.  Dim Identifier stores different weight types.
+
+![](images/dw1.png)
+
+I had my team validate the results of our work against previously pbulished analysis using the same data. They wrote up their work and [presented it to the UMEC.](https://docs.google.com/presentation/d/1-vAFNi2LHSIr9DB3ts499JpuhqPEOY-r3SFpbWIIWes/edit#slide=id.g5aab392ecc_0_673){target="_blank"}.
+
+My team and I have since iterated this design and produced a 2.0 version in our Amazon cloud environment. Primary changes were to organize surveys into better categories so that it is easy to identify questions universal to all professions in all years (demographics and hours worked for example), questions specific to a profession(eg: residency location or work setting) and questions that are both profession and year specific (eg: how many babies do you as a CNM deliver each year). 
+
+![](images/DW2schema.png)
+
+We are currently working on connecting this schema to Tableau dashboards to provide workforce and profession specific information and to feed future workforce reporting and analysis.
+
+We are also working to interconnect additional government, public and private datasets into our data model. 
+
+![](images/futureschema.png)
+
+Long term intentions are to map to a standard such as the [OMOP Common Data Model](https://www.ohdsi.org/data-standardization/) so that we can produce more standardized analysis that can be replicated and compared across the country. 

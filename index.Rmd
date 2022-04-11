@@ -41,4 +41,4 @@ As part of my board service with the National Forum, I had the opportunity to co
 
 As a fun personal side project, after the survey analysis was published, I decided to build a simple data visualization of the data set from the survey, broken down by the state each respondent reported being employed in. Check out my [projects](https://clarkruttinger.info/projects.html) page to view this work. I am currently serving as a volunteer advisor to the [HRSA funded Health Workforce Technology Assistance Center](https://www.healthworkforceta.org/about/expert-workgroup/). I'm also volunteering on the [Academy Health, Health Workforce Interest Group Advisory Committee for 2021-2022](https://academyhealth.org/professional-resources/interest-groups/health-workforce-interest-group/advisory-committee/page/health-workforce-interest-group-advisory-committee).
 
-This site is built and maintained entirely using ![](RStudio.png){width="10%"} ![](GitHub-Mark-64px.png){width="10%"}
+This site is built and maintained entirely using ![](images/RStudio.png){width="10%"} ![](images/GitHub-Mark-64px.png){width="10%"}

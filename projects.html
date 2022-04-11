@@ -13,8 +13,8 @@
 
 <title>Projects</title>
 
-<script src="site_libs/header-attrs-2.10/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -57,6 +57,7 @@ if (window.hljs) {
 
 
 
+
 <link rel="stylesheet" href="style.css" type="text/css" />
 
 
@@ -81,6 +82,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -233,7 +237,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -278,29 +282,49 @@ $(document).ready(function () {
 
 
 <div id="utah-mental-health-workforce-2021" class="section level2">
-<h2><a href="http://umec-shiny-prod-alb-79075571.us-west-2.elb.amazonaws.com/projects/Mental_Health/">Utah Mental Health Workforce 2021</a></h2>
+<h2><a
+href="http://umec-shiny-prod-alb-79075571.us-west-2.elb.amazonaws.com/projects/Mental_Health/">Utah
+Mental Health Workforce 2021</a></h2>
 <ul>
-<li>Analysis of a survey I designed and administered to all LCSWs, CMHCs, MFTs and Psychologists licensed in the state of Utah. I coded initial examples of charts and layout for my team to build out. I coded the projection model section of the report</li>
+<li>Analysis of a survey I designed and administered to all LCSWs,
+CMHCs, MFTs and Psychologists licensed in the state of Utah. I coded
+initial examples of charts and layout for my team to build out. I coded
+the projection model section of the report</li>
 </ul>
 </div>
-<div id="national-nursing-by-the-numbers-dashboard" class="section level2">
-<h2><a href="https://clarkruttinger.shinyapps.io/draftboard/">National Nursing by the Numbers Dashboard</a></h2>
+<div id="national-nursing-by-the-numbers-dashboard"
+class="section level2">
+<h2><a href="https://clarkruttinger.shinyapps.io/draftboard/">National
+Nursing by the Numbers Dashboard</a></h2>
 <ul>
-<li>I coauthored the analysis of the <a href="https://www.journalofnursingregulation.com/article/S2155-8256(21)00027-2/fulltext">NCSBN 2020 National Nurse Sample Survey</a>. Once the report was released I designed and coded this flexdashboard from the data grouped by reported state of employment for each survey respondent.</li>
+<li>I coauthored the analysis of the <a
+href="https://www.journalofnursingregulation.com/article/S2155-8256(21)00027-2/fulltext">NCSBN
+2020 National Nurse Sample Survey</a>. Once the report was released I
+designed and coded this flexdashboard from the data grouped by reported
+state of employment for each survey respondent.</li>
 </ul>
 </div>
 <div id="physician-ratios-dashboard" class="section level2">
-<h2><a href="http://umec-shiny-prod-alb-79075571.us-west-2.elb.amazonaws.com/projects/FlexRatios/#section-about">Physician Ratios Dashboard</a></h2>
+<h2><a
+href="http://umec-shiny-prod-alb-79075571.us-west-2.elb.amazonaws.com/projects/FlexRatios/#section-about">Physician
+Ratios Dashboard</a></h2>
 <ul>
-<li>Comparison of Physician Specialty Ratios in Utah to AAMC Physician Specialty Ratio National Average 2010 to 2020</li>
+<li>Comparison of Physician Specialty Ratios in Utah to AAMC Physician
+Specialty Ratio National Average 2010 to 2020</li>
 </ul>
 </div>
 <div id="rn-data-analysis-in-r" class="section level2">
-<h2><a href="https://rpubs.com/crutting/DesNewsAnalysis">RN Data Analysis in R</a></h2>
+<h2><a href="https://rpubs.com/crutting/DesNewsAnalysis">RN Data
+Analysis in R</a></h2>
 <ul>
-<li>An RMarkdown analysis of RN wage data in Utah from 2015 to 2020 from surveys I conducted in those years of the Utah RN Workforce. Analysis conducted for an investigative report in the Deseret News in Utah. <a href="https://www.deseret.com/indepth/2021/2/28/22208271/covid-19-revealed-about-nursing-health-care-pandemic-wages-utah-intermountain-health-care">“What Covid-19 has revealed about the nursing profession”</a></li>
+<li>An RMarkdown analysis of RN wage data in Utah from 2015 to 2020 from
+surveys I conducted in those years of the Utah RN Workforce. Analysis
+conducted for an investigative report in the Deseret News in Utah. <a
+href="https://www.deseret.com/indepth/2021/2/28/22208271/covid-19-revealed-about-nursing-health-care-pandemic-wages-utah-intermountain-health-care">“What
+Covid-19 has revealed about the nursing profession”</a></li>
 </ul>
-<p>All of these projects were built and are maintained using <img src="RStudio.png" style="width:10.0%" /></p>
+<p>All of these projects were built and are maintained using <img
+src="images/RStudio.png" style="width:10.0%" /></p>
 </div>
 
 

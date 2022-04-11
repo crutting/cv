@@ -18,5 +18,5 @@ title: "Projects"
 
 - An RMarkdown analysis of RN wage data in Utah from 2015 to 2020 from surveys I conducted in those years of the Utah RN Workforce. Analysis conducted for an investigative report in the Deseret News in Utah. ["What Covid-19 has revealed about the nursing profession"](https://www.deseret.com/indepth/2021/2/28/22208271/covid-19-revealed-about-nursing-health-care-pandemic-wages-utah-intermountain-health-care)
 
-All of these projects were built and are maintained using ![](RStudio.png){width="10%"}
+All of these projects were built and are maintained using ![](images/RStudio.png){width="10%"}
 
