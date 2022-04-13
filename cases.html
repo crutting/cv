@@ -402,7 +402,7 @@ $(document).ready(function () {
 <p>At this point in time I had a long history of talks with legislators and various health professional stakeholders about how we could make change in Utah. They all saw the need for change. We were lacking the political will to make the change though. The onset of the pandemic became an accelerant and a focusing event on showing the desparate need for improvements to our system for informed decision making around health policy.</p>
 <p>After engagements with many states on the question of how to leverage data for better health workforce policy, the <a href="https://www.nga.org/center/publications/informing-health-care-workforce-policy-leveraging-data/" target="_blank">NGA produced a brief</a> to inform governors and states about how to go about this important work.</p>
 <p>With our strategic plan in hand and the obvious need demonstrated by the pandemic, we approached Utah Representative Norman Thurston, who I had been having discussions with about this topic for years and asked him if he would consider a bill. He was of course already well aware of our work and well prepared to take this plan and run with it. <a href="https://le.utah.gov/~2022/bills/static/HB0176.html">HB 176 The Utah Health Workforce Act.</a> was pased with the 2022 Utah Legislative session with broad support and no substantive opposition.</p>
-<p>I’m hopeful for the improvements that will come with the passage of this act! I look forward to what the changes will bring in terms of improved collaboration in making health policy in Utah. We are moving from a situation where everyone is touching different parts of the elephant to a a form more like a beehive where we are working together for common goals. Quite appropriate for the Beehive State!</p>
+<p>I’m hopeful for the improvements that will come with the passage of this act! I look forward to what the changes will bring in terms of improved collaboration in making health policy in Utah. We are moving from a situation where everyone is touching different parts of the elephant <img src="images/elephant.png" /> to a a form more like a beehive where we are working together for common goals. Quite appropriate for the Beehive State! <img src="images/beehive.png" /></p>
 </div>
 <div id="modeling-a-health-workforce-data-warehouse" class="section level3">
 <h3>Modeling a Health Workforce Data Warehouse</h3>
@@ -434,7 +434,7 @@ $(document).ready(function () {
 <h3>Modeling a Graph Database in NEO4J</h3>
 <p>Out of the application design engagement my research team was awarded with IBM, we began to develop an understanding of what we needed to do to create a data set representative of all primary care service needs in the Utah state population.</p>
 <p>As I spoke at conferences and networked with people about our modeling ideas, I met a brilliant nurse informaticist working for the VA a the time named <a href="https://www.linkedin.com/in/stephen-weaver-rn">Stephen Weaver</a> who suggested that I look into using a graph database as the solution.</p>
-<p>As the pandemic hit and we were all isolated at home, Stephen and I decided to have weekly Zoom meetings to talk about ideas and collaborate on a project in a graph database platform called NEO4J together.</p>
+<p>As the pandemic hit and we were all isolated at home, Stephen and I decided to have weekly Zoom meetings to talk about ideas and collaborate on a project in a graph database platform called <a href="https://neo4j.com/">NEO4J</a> together.</p>
 <p>We decided that our approach would be to model a graph database of 3 years of the <a href="https://stats.health.utah.gov/about-the-data/apcd/">Utah All Payers Claims Database</a>(APCD) so that we could easily run various clustering machine learning algorithms to look for utilization patterns in the data to identify patient archetypes in the population. This approach had several benefits.</p>
 <ol style="list-style-type: decimal">
 <li><p>The NEO4J Community Edition is free and open source. This allowed us to build our prototype with only the cost of the sweat equity we were willing to contribute.</p></li>
@@ -447,6 +447,7 @@ $(document).ready(function () {
 <p><img src="images/talend.png" /></p>
 <p>From there, we ran SQL quereies to produce the files to load according to the graph schema we designed for NEO4J</p>
 <p><img src="images/apcdrelationships.png" /> Here is the same schema in NEO4J after we loaded our initial test files. <img src="images/apcdgraphschema.png" /></p>
+<p>We are currently working on improving the data load process and cleaning up some identified bugs so that we can begin pursuing our exploration of machine learning algorithms to this data set.</p>
 </div>
 </div>
 
