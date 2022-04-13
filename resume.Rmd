@@ -31,7 +31,7 @@ Salt Lake City, Utah, 84124
 
 |                        |                            |                       |                                   |
 |-----------------|-----------------|-----------------|----------------------|
-| SQL, Python            | RStudio, Github            | SPSS, SAS, STATA      | Tableau                           |
+| SQL, Python, Jupyter Notebook   | RStudio, Github            | SPSS, SAS, STATA      | Tableau                           |
 | Data Warehouse Design  | Amazon Cloud Architecture  | Graph Database Design | Regression/ Classification Models |
 | Grant Writing          | Team Oriented Collaborator | Problem Solver        | Excellent Communicator            |
 | Health Policy Analysis | Research Design            | Systems Thinking      | Fluent Spanish                    |
