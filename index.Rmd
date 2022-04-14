@@ -76,12 +76,12 @@ output: html_document
 
     -   I engaged in a project and discussions with colleagues in various states about [how to collect, analyze and share information about the nursing workforce across the country.](https://docs.google.com/presentation/d/1epsYn5cg7j-h5PYT9gUrKC7LImMZhxgqi54-t_8B-bw/edit#slide=id.g8061198324_0_69)
 
--   Coauthor of the most recent [NCSBN National Nursing Workforce Survey](https://www.ncsbn.org/workforce.htm).
+-   Coauthor of the 2020 [NCSBN National Nursing Workforce Survey](https://www.ncsbn.org/workforce.htm).
 
     -   As a fun personal side project, after the survey analysis was published, I built a [data visualization of the data set from the survey](https://clarkruttinger.shinyapps.io/draftboard/), broken down by the state in which each respondent reported being employed.
 
--   Volunteer adviser to the [HRSA funded Health Workforce Technology Assistance Center](https://www.healthworkforceta.org/about/expert-workgroup/).
+-   Participant on the Expert Workgroup for the [HRSA funded Health Workforce Technology Assistance Center](https://www.healthworkforceta.org/about/expert-workgroup/).
 
--   On the [Academy Health, Health Workforce Interest Group Advisory Committee for 2021-2022](https://academyhealth.org/professional-resources/interest-groups/health-workforce-interest-group/advisory-committee/page/health-workforce-interest-group-advisory-committee).
+-   Participant on the [Academy Health, Health Workforce Interest Group Advisory Committee for 2021-2022](https://academyhealth.org/professional-resources/interest-groups/health-workforce-interest-group/advisory-committee/page/health-workforce-interest-group-advisory-committee).
 
 This site is built and maintained entirely by me using ![](images/RStudio.png){width="10%"} ![](images/GitHub-Mark-64px.png){width="10%"}
