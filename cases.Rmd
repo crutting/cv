@@ -37,7 +37,7 @@ Francisco](https://healthpolicy.ucsf.edu/philip-r-lee-institute-health-policy-st
 analyzed how far that goal was from being actualized nationally by
 creating a projection model of bachelors prepared nurses in the national
 nursing workforce using the [American Community
-Survey](https://www.census.gov/programs-surveys/acs)(ACS){target="\_blank"}.
+Survey](https://www.census.gov/programs-surveys/acs)(ACS){target="_blank"}.
 
 Inspired by Dr. Spetz' work, my team and I created an [interactive
 projection](https://umec-nursing.utah.gov/bsn-projections/){target="_blank"}
@@ -55,9 +55,9 @@ workforce had risen to 56.2% [(pg
 
 The value of this model is two fold:
 
-1.  Demonstration of underlying factors involved in measuring the
+**1.  Demonstration of underlying factors involved in measuring the
     state's system for producing nurses. The model uses data from
-    several sources to produce the projection.
+    several sources to produce the projection.**
 
 -   UMEC RN supply surveys
 
@@ -76,8 +76,8 @@ The value of this model is two fold:
 -   National Council of State Boards of Nursing national estimates of
     RNs
 
-2.  Ability to produce counterfactuals to examine best the best strategy
-    of attaining a defined goal for the system.
+**2.  Ability to produce counterfactuals to examine best the best strategy
+    of attaining a defined goal for the system.**
 
 -   What is the result in the model of adjusting for the impacts on
     enrollment from the pandemic ?
@@ -89,8 +89,8 @@ The value of this model is two fold:
     result in more retained graduates of specific types?
 
 Ultimately further work needs to be done to take this from a single use
-specific model to an operationalized and automated model for projecting
-the future state of any point in the system.
+specific model to an operationalized and automated application for projecting
+the future state of any point in the system. My team and I intend to pursue this work in 2023. 
 
 ### Nursing Employment Demand
 
@@ -119,7 +119,9 @@ automatically by refreshing the source data.
 <img src="images/sourcedata.png" style="display: inline-block; margin: 5"/>
 
 This design allows for a persistent dashboard application to be created
-to update the employer demand analysis when needed. My team and I
+to update the employer demand analysis when needed. 
+
+My team and I
 produced our baseline report in 2020. It captured the first quarter of
 the pandemic. We are currently working on a release of an update to the
 analysis that will look back on what happened over the pandemic time
@@ -139,7 +141,7 @@ these questions are deployed through a survey methodology to identified
 nursing employers in a state. I produced demand studies for the state of
 Utah using a [survey methodology in 2015 and
 2018.](https://umec-nursing.utah.gov/nursing-demand/){target="_blank"}
-The shortcomings of this methodology, namely that it is very time
+The shortcomings of this previous methodology, namely that it is very time
 intensive to gather data in this manner, made me want to look for a
 better way to produce a demand study into the future.
 
@@ -161,7 +163,7 @@ and equations from national sources to produce a standardized analysis
 that can be replicated in any state where someone can connect state
 licensing records and supplemental workforce supply surveys to state
 Unemployment Insurance records. The analysis is not dependent on
-arbitrary participation rates from health system administrators. It
+arbitrary survey participation rates from health system administrators. It
 takes advantage of transactional data already being produced by state
 government to add valuable system insights.
 
@@ -175,17 +177,17 @@ responses. I would then clean and process the data using SPSS and Excel.
 Finally, I would type up my analysis and paste in all of the tables,
 charts and graphs into a PDF and send that to be printed and spiral
 bound. I've taught others this process while simultaneously making small
-improvements every year since. The problem here is that we are using
+improvements every year since. The problem with this process is that we are using
 20th century tools to do work that could be much improved using modern
-analytics tools. As I looked at our past work, I found that our response
-rates were begining to tank. We went from high 60% range responses in
+analytics tools. As I looked at our past survey work, I found that our response
+rates were beginning to tank. We went from high 60% range responses in
 the first decade of surveying the health workforce with mailed paper
 surveys to the high 20% range by 2020. While this is still a
 statistically valid sample representing the state of Utah, over time we
 are losing granularity to describe and model health professions at
 geographic levels below the entire state such as zip codes or census
 tracts and further analysis by sub specialty or work setting becomes
-more difficult. No professions are surveyed as much as health care
+more difficult. No professionals are surveyed as much as health care
 professionals. They are over saturated and tired of responding to
 surveys.
 
@@ -200,16 +202,16 @@ The survey pictured is one of the last paper surveys to ever be returned
 to the UMEC. This happens every so often. I get a response two years
 after I sent out the survey (also a year after I published the results
 of the survey). It always makes me laugh a little and wonder why the
-person decided to send in the response.
+person decided to finally send in the response.
 
 ![](images/rnsurvey.jpg)
 
 Modernization of our data collection process has allowed us to focus
-more time on more advanced analytics and informatics. Last year my team
+more time on advanced analytics and informatics. Last year my team
 and I modernized our analysis platform with a data warehouse built in an
 AWS cloud environment We produced our most recent health profession
-workforce survey on U[tah's Mental Health
-workforce](https://umec.utah.gov/publications/mental-health/){target="_blank"}
+workforce survey on [Utah's Mental Health
+Workforce](https://umec.utah.gov/publications/mental-health/){target="_blank"}
 using Python and R and piped the analysis to dashboards and report
 templates in Tableau and R Shiny. This work serves as a code base for us
 to refine with new health professions analysis as we produce them. We
@@ -221,10 +223,9 @@ We have also began to explore application of machine learning to the
 data we have available to us. From the work my team and I did to clean
 and standardize our historic data, one of my analysts decided to use our
 datasets for his capstone project to complete his Masters of Statistics.
-We ended up getting a paper published in 2022 from his work, in an
-international health research journal on [using ML to predict rural
-practice decision in the health
-workforce](https://www.rrh.org.au/journal/article/7050){target="_blank"
+We ended up with a paper published in 2022 from his work, in the Journal of Rural and Remote Health. [Using ML to Predict Rural
+Practice Decision in the Health
+Workforce](https://www.rrh.org.au/journal/article/7050){target="_blank"
 rel="noopener noreferrer"} We are excited to continue to build off of
 this work as we further automate our data collection, cleaning,
 transformation and storage processes.
@@ -239,7 +240,7 @@ convened its first annual Primary Care Summit.
 
 ![](images/ahecaims.png)
 
-My office contributed funding to Dr Magill to beging to pursue is stated
+My office contributed funding to Dr. Magill to begin to pursue his stated
 research aims. I began meeting with Dr. Magill to understand how I could
 support his work with data and analysis. As we met together and
 brainstormed ideas we decided that we wanted to come up with a way to
@@ -248,17 +249,17 @@ compare the number of FTEs required to provide all primary care needs
 for the Utah population to the number of FTEs in the primary care
 workforce in the state.
 
-![](images/conceptmodel.png) I began to explore data surces for
+![](images/conceptmodel.png) I began to explore data sources to represent
 population health needs and started working on a prototype calculation
 model using Microsoft Excel. Through Dr. Magill's national contacts we
-were made aware of the IBM Healthcorps. We were told that they were
+were made aware of the [IBM Healthcorps](http://ibmhealthcorps.org). We were told that they were
 looking for a health workforce project to get involved with. I wrote up
 our proposal and [we were awarded an in-kind work
 grant](https://www.ibm.org/initiatives/ibm-service-corps/csc-7){target="_blank"
 rel="noopener noreferrer"} for a team of IBM designers, architects and
 data scientists to come and work on our project. I produce a poster
 about our concept and was accepted at the Academy Health, National
-Health Policy Orientation to present the work.
+Health Policy Orientation in the summer of 2018 to present the work.
 
 ![](images/AHposter.png)
 
@@ -278,12 +279,12 @@ stakeholders three questions.
 
 The design team explained to me that their goal was to take a survey of
 the entire ocean that is health workforce policy making in Utah. Then
-they would decide where in that ocean to dip their teacup and then they
+they would decide with our help, where in that ocean to dip their teacup and then they
 would boil that cup of ocean down to its essence. As I worked with the
 team over three weeks I had the extraordinary privilege to watch the
-process of IBM Design Thinking unfold. At the end of the engagement, we
-had a functioning minimum viable modeling product built in Python and
-Docker, documentation of how the application works and a plan for how to
+process of [IBM Design](https://www.ibm.com/design/) thinking unfold. At the end of the engagement, we
+had a functioning minimum viable modeling product built in [Python](https://www.python.org), [React](https://reactjs.org), [Node JS](https://nodejs.org/en/) and
+[Docker](https://www.docker.com), along with documentation of how the application works and a plan for how to
 move forward with building on the initial IBM work.
 
 ![](images/ibmtimeline.png)
@@ -311,7 +312,7 @@ advance the project through some growth over the last few years. We
 secured funding from the Utah State Legislature in 2019 to build out
 designs created by IBM of a front end, web-based user interface for the
 model. The model and interface are running on a state of Utah domain and
-can be examined at <https://teamcare.utah.gov> The model is currently loaded with data from the prototype. Users can create their own load of the model by providing data they deem sufficient to the input requirements andsave their own profile and modeling outputs. 
+can be examined at <https://teamcare.utah.gov> The model is currently loaded with prototype data. Users can create their own load of the model by providing data they deem sufficient to the input requirements and can save their own profile and modeling outputs. 
 
 Work on the Utah Team Workforce Model continues today. 
 
@@ -321,30 +322,30 @@ Current work is focused on three aims:
 2.  Validate model inputs with real world observational studies
 3.  Assess usability of the tool with users
 
-We are currently developing and submitting research proposals related to each of these aims. the team is also conducting literature review on the application of machine learning to claims databases to explore how we want to approach loading the source data on patient populations into the model as patient archetypes based on primary care utilization. 
+We are currently developing and submitting research proposals related to each of these aims. the team is also conducting literature review on the application of machine learning to claims databases to explore how we want to approach loading the source data on patient populations into the model as patient archetypes based on primary care utilization patterns. 
 
-Over the last year, I built a [graph database](https://medium.com/@timo.klimmer/what-the-heck-is-a-graph-database-cd92ae041b5a){target="_blank"} of three years of data from the [Utah All Payers Claims Database](https://stats.health.utah.gov/about-the-data/apcd/){target="_blank"} to explore how to create patient archetypes within the Utah population,  clustered by utilization patterns to produce a list of population types to represent patients in the model. 
+Over the last year, I built a [graph database](https://medium.com/@timo.klimmer/what-the-heck-is-a-graph-database-cd92ae041b5a){target="_blank"} of three years of data from the [Utah All Payers Claims Database](https://stats.health.utah.gov/about-the-data/apcd/){target="_blank"} to explore how to create patient archetypes within the Utah population,  clustered by utilization patterns to represent patients in the model. 
 
 ### National Forum Data Interconnection
 
-[The National Forum of State Nursing Workforce Centers](https://nursingworkforcecenters.org/about-us/){target="_blank"} is a not-for-profit membership organization with member centers in 38 states. a Member entities in each state is designated as the state workforce center. Since 2015, I have participated with the National Forum as Utah's Center Director. The centers engage in advocacy for the nursing profession and share best practices in advancing national nursing goals. The National Forum produces and maintains the [National Minimum Nursing Data Set (MDS) recomendations](https://nursingworkforcecenters.org/dataset/){target="_blank"} for gathering supply, demand and education data about nurses in each state. 
+[The National Forum of State Nursing Workforce Centers](https://nursingworkforcecenters.org/about-us/){target="_blank"} is a not-for-profit membership organization with member centers in 38 states. a Member entity in each state is designated as the state workforce center. Since 2015, I have participated with the National Forum as Utah's Center Director. The centers engage in advocacy for the nursing profession and share best practices in advancing national nursing goals. The National Forum produces and maintains the [National Minimum Nursing Data Set (MDS) recomendations](https://nursingworkforcecenters.org/dataset/){target="_blank"} for gathering supply, demand and education data about nurses in each state. 
 
 As I became involved with the National Forum, I became acquainted with nursing center directors across the country. Many of these centers are dedicated to running nursing education programs and advocating for policy change at the state level. The large majority of these center directors were nurses of a certain age. These nurses have vast experience in the profession. They are masters of taking information and initiating change in their states. They are a deep network of nursing expertise in the country on every subject related to nursing workforce policy and planning. 
 
-In 2018, I joined the board of the National Forum and served as board president from 2019 to 2020. During that time I was able to [engage in a project and discussions with colleagues in various states](https://docs.google.com/presentation/d/1epsYn5cg7j-h5PYT9gUrKC7LImMZhxgqi54-t_8B-bw/edit#slide=id.g8061198324_0_69){target="_blank"} about how to collect, analyze and share information about the nursing workforce across the country.
+In 2018, I joined the board of the National Forum and served as Board President from 2019 to 2020. During that time I was able to [engage in a project and discussions with colleagues in various states](https://docs.google.com/presentation/d/1epsYn5cg7j-h5PYT9gUrKC7LImMZhxgqi54-t_8B-bw/edit#slide=id.g8061198324_0_69){target="_blank"} about how to collect, analyze and share information about the nursing workforce across the country.
 
 I proposed that states with National Forum presence each submit a set of aggregates based on the National Forum's supply MDS from the data collected about the nursing workforce supply in their state to a template that I worked to develop with others on the National Forum's research committee. I had a member of my work team throw together a [national map in Tableau](https://public.tableau.com/app/profile/andrew.salt/viz/ForumRN/LandingPage){target="_blank"} to show the submission data from each state. 
 
-The purpose of this project was to create a national picture of the nursing workforce in each state from the entities producing state level nursing workforce data and analysis. This, I argued, would produce a better picture of the national nursing workforce than top down, national nursing surveys produce. The information would becoming from the bottom up and could be updated at regular intervals coinciding with when states updated their state level nursing supply surveys.
+The purpose of this project was to create a national picture of the nursing workforce in each state from the entities producing state level nursing workforce data and analysis. This, I argued, would produce a better picture of the national nursing workforce than top down, national nursing surveys produce. The information would be coming from the bottom up and could be updated at regular intervals coinciding with when states updated their state level nursing supply surveys.
 
-I worked with Forum members to understand how the template for data submission would work best. I presented at Forum meetings and conferences onthe idea. Ultimately, out of 38 member states, I was only able to get 10 of them to submit their aggregated data to our Tableau dashboard. These 10 states are the states with the most alignment around data collection and analysis managed or controlled in some way by the state nursing workforce center. States who did not submit had different reasons for not submitting. They were not the ones producing the data and they did not have the skills, knowledge or budget to have the data aggregated in the way we set. Some were just not interested in engaging inthe project. Ultimately, the low participation in this project showed the Forum that they had work to do in terms of improving engagement with member states and building connections within states to the people who know how to analyse health workforce data. I continue to interact with the National Forum on a volunteer basis and seek to find ways to produce new projects analyzing workforce migration and interstate compact participation across the country. 
+I worked with Forum members to understand how the template for data submission would work best. I presented at Forum meetings and conferences on the idea. Ultimately, out of 38 member states, I was only able to get 10 of them to submit their aggregated data to our Tableau dashboard. These 10 states are the states with the most alignment around data collection and analysis managed or controlled in some way by the state nursing workforce center. States who did not submit had different reasons for not submitting. They were not the ones producing the data or they did not have the skills, knowledge or budget to have the data aggregated in the way we set up. Ultimately, the low participation in this project showed the Forum that they have work to do in terms of improving engagement with member states and building connections within states to the people who know how to analyse health workforce data. I continue to interact with the National Forum on a volunteer basis and seek to find ways to produce new projects analyzing workforce migration and interstate compact participation across the country. 
 
 ### Utah Health Workforce Coalition
 
 In early 2018, I was invited by the National Governors Association to
 participate in a policy engagement they were holding around health
 workforce. They flew me and three other representatives from Utah they
-had identified as key health policy influencers to DC to talk with them
+had identified as key health policy influencers to their offices in DC to talk with them
 about what states were doing to improve access and quality to data to
 inform better health policy. We were introduced to [Dr. Hannah Maxey
 from the Bowen Center for Health Workforce
@@ -355,16 +356,16 @@ provided us with a template for thinking about how to approach
 identifying all players within the system in our state and how we would
 go about approaching change.
 
-Later, in October of 2018, I was invited along with a collegue from the
-Utah Office of Primary Care and Rural Health (OPCRH) to submit a
+Later, in October of 2018, I was invited along with a colleague from the
+[Utah Office of Primary Care and Rural Health](https://ruralhealth.health.utah.gov) (OPCRH) to submit a
 proposal for how we would go about making change to improve the use of
 data to impact health workforce policy in Utah.
 
-THe OPCRH is the office that calculates the [Health Professional
+The OPCRH is the office that calculates the [Health Professional
 Shortage Area
 designations](https://bhw.hrsa.gov/workforce-shortage-areas/shortage-designation){target="_blank"}
 for HRSA in Utah. This calculation is done through an antiquated process
-of gather survey data and hiring an army of phone surveyors to call
+of gathering survey data and hiring an army of phone surveyors to call
 clinics across the state and validate the survey responses. It is a
 process that is done independent of any other data collection processes
 in the state. It needed to be improved with a new methodology that uses
@@ -388,35 +389,33 @@ well-qualified and sustainable workforce that equitably meets the needs
 of all Utah residents, with emphasis for those in rural and underserved
 areas. We hired Dr Maxey to take us through the process of developing a
 strategic plan for how we would make change. Out of the work of many
-hours of discussions with this coalition of statekholders we came up
-with a plan that recomended legislation to integrate supplemental supply
+hours of discussions with this coalition of stakeholders we came up
+with a plan that recommended legislation to integrate supplemental supply
 surveys with the state licensing process and to create an advisory
-council within state government to guide and approve questions and
-analysis that would come from this data.
+council within state government to guide and approve survey questions and
+analysis that would come from this data collection.
 
 At this point in time I had a long history of talks with legislators and
 various health professional stakeholders about how we could make change
 in Utah. They all saw the need for change. We were lacking the political
 will to make the change though. The onset of the pandemic became an
-accelerant and a focusing event on showing the desparate need for
+accelerator and a focusing event on showing the desperate need for
 improvements to our system for informed decision making around health
 policy.
 
 After engagements with many states on the question of how to leverage data for better health workforce policy, the [NGA produced a brief](https://www.nga.org/center/publications/informing-health-care-workforce-policy-leveraging-data/){target="_blank"} to inform governors and states about how to go about this important work. 
 
 With our strategic plan in hand and the obvious need demonstrated by the
-pandemic, we approached Utah Representative Norman Thurston, who I had
-been having discussions with about this topic for years and asked him if
-he would consider a bill. He was of course already well aware of our
+pandemic, we approached Utah Representative Norman Thurston, to consider a bill. He was of course already well aware of our
 work and well prepared to take this plan and run with it. [HB 176 The
 Utah Health Workforce
-Act.](https://le.utah.gov/~2022/bills/static/HB0176.html) was pased with
+Act.](https://le.utah.gov/~2022/bills/static/HB0176.html) was passed in
 the 2022 Utah Legislative session with broad support and no substantive
 opposition.
 
 I'm hopeful for the improvements that will come with the passage of this
 act! I look forward to what the changes will bring in terms of improved
-collaboration in making health policy in Utah. We are moving from a
+collaboration in improving health policy in Utah. We are moving from a
 situation where everyone is touching different parts of the elephant 
 ![](images/elephant.png)
 to
@@ -426,9 +425,9 @@ goals. Quite appropriate for the Beehive State!
 
 ### Modeling a Health Workforce Data Warehouse
 
-For all of the survey work I've done over the last 12 years, I have designed and built data entry databases in Microsoft access or survey software like [SNAP](https://www.snapsurveys.com){target="_blank"} for OCR scanning and [Qualtrics](https://www.qualtrics.com){target="_blank"} for online surveys. I provided data entry databases to contracted companies for larger projects like the [2015 Utah RN Workforce Supply Survey](https://umec-nursing.utah.gov/wp-content/uploads/RN-report-final-updated5-9-2016.pdf){target="_blank"}. I taught interns the process as I operationalized it over time.
+For all of the survey work I've done over the last 12 years, I have designed and built data entry databases in Microsoft access or survey scanning software like [SNAP](https://www.snapsurveys.com){target="_blank"} for OCR scanning and [Qualtrics](https://www.qualtrics.com){target="_blank"} for online surveys. I built data entry databases for companies we contracted ocasionally for larger projects like the [2015 Utah RN Workforce Supply Survey](https://umec-nursing.utah.gov/wp-content/uploads/RN-report-final-updated5-9-2016.pdf){target="_blank"}. 
 
-As I finished my MBA electives with a certificate in information systems I became interested in how to consolidate and better conect annual surveys I had administered over years at the UMEC.
+As I finished my MBA electives with a certificate in Information Systems I became interested in how to consolidate and better connect annual surveys I had administered over years at the UMEC to other data sets I had access to for analysis.
 
 As a [final project ](https://docs.google.com/presentation/d/1CGLkNZEPoMEMbPDFDQXgLmKfQRNHwxla/edit?usp=sharing&ouid=105000908584582998954&rtpof=true&sd=true){target="_blank"} for a class in data warehouse design, I designed a small data warehouse to store a survey collected from an annual survey of nursing deans across the state of Utah in collaboration with the [Utah Organization of Nurse Leaders, Academic Leadership Committe](https://utahnurseleaders.nursingnetwork.com){target="_blank"}.
 
@@ -436,7 +435,7 @@ I developed that work with my team at the UMEC into a Tableau dashboard about [U
 
 in July of 2018 I hired a computer science undergrad as an intern and I assigned one of my research analysts to work with me to design a data warehouse of all of the health professional workforce supply surveys that had been produced by the UMEC since they started collecting them in 1997.
 
-These surveys had been administered in different years to differen health professions. With each survey administration there were small changes made to survey instruments to add questions or change wording. Because of regualr staff turnover, there had never been any standardization to the survey process.
+These surveys had been administered in different years to different health professions. With each survey administration there were small changes made to survey instruments to add questions or change wording. Because of regular staff turnover, there had never been much standardization to the survey process.
 
 I started with a literature review to find database designs that solved a similar problem of using a [dimensional data warehouse to standardize historical survey data](https://nces.ed.gov/FCSM/pdf/II_B_Yost_FCSM1999.pdf){target="_blank"}.
 
@@ -456,15 +455,15 @@ Dim Respondent stores respondent information such as their license numbers, NPI,
 
 ![](images/dw1.png)
 
-I had my team validate the results of our work against previously pbulished analysis using the same data. They wrote up their work and [presented it to the UMEC.](https://docs.google.com/presentation/d/1-vAFNi2LHSIr9DB3ts499JpuhqPEOY-r3SFpbWIIWes/edit#slide=id.g5aab392ecc_0_673){target="_blank"}.
+I had my team validate the results of our work against our previously published analysis using the same data. They wrote up their work and [presented it to the UMEC.](https://docs.google.com/presentation/d/1-vAFNi2LHSIr9DB3ts499JpuhqPEOY-r3SFpbWIIWes/edit#slide=id.g5aab392ecc_0_673){target="_blank"}.
 
-My team and I have since iterated this design and produced a 2.0 version in our Amazon cloud environment. Primary changes were to organize surveys into better categories so that it is easy to identify questions universal to all professions in all years (demographics and hours worked for example), questions specific to a profession(eg: residency location or work setting) and questions that are both profession and year specific (eg: how many babies do you as a CNM deliver each year). 
+My team and I have since iterated this design and produced a 2.0 version of our DW in our Amazon cloud environment. Primary changes were to organize surveys into better categories so that it is easy to identify questions universal to all professions in all years (demographics and hours worked for example), questions specific to a profession(eg: residency location or work setting) and questions that are both profession and year specific (eg: how many babies do you as a CNM deliver each year). 
 
 ![](images/DW2schema.png)
 
 We are currently working on connecting this schema to Tableau dashboards to provide workforce and profession specific information and to feed future workforce reporting and analysis.
 
-We are also working to interconnect additional government, public and private datasets into our data model. 
+We are also working to interconnect additional government, public and private data sets into our data model. 
 
 ![](images/futureschema.png)
 
@@ -482,9 +481,9 @@ We decided that our approach would be to model a graph database of 3 years of th
 
 1.  The NEO4J Community Edition is free and open source. This allowed us to build our prototype with only the cost of the sweat equity we were willing to contribute.
 
-2.   NEO4J Community Edition also comes as a server version that can be deployed in an AWS environment and accessed through a web browser with a user login. This allowed us to securely load and host our graph on a domain hosted by the State of Utah. We were able to allow specific members of our research team to access the graph and continue to work together while we were all living through a global pandemic.
+2.   NEO4J Community Edition also comes as a server version that can be deployed in an AWS environment and accessed through a web browser with a user login. This allowed us to securely load and host our graph on a domain hosted by the State of Utah. We were able to allow specific members of our research team to access the graph and continue to work together while we were all living separately through a global pandemic.
 
-We began with submitting a request to the Utah Office of Healthcare Statistics that manages the state APCD to receive the data we wanted to analyze.  
+We began with submitting a request to the [Utah Office of Healthcare Statistics](https://stats.health.utah.gov) that manages the state APCD to receive the data we wanted to analyze.  
 ![](images/apcdLogicalmodel.png)
 
 We then made a plan for how to ETL the data into the files required to load the graph in NEO4J. 
