@@ -68,7 +68,7 @@ output: html_document
 
 **Active Participant in the National Conversation Around Health Policy, Data Analysis and Interconnectivity.**
 
--   I've been an accepted speaker at the [AAMC Annual Workforce Conference](https://www.aamc.org/what-we-do/mission-areas/health-care/workforce-studies/meetings) 2019, 2021 and 2022.
+-   I've been an accepted speaker at the [AAMC Annual Workforce Conference](https://www.aamc.org/what-we-do/mission-areas/health-care/workforce-studies/meetings) for the years 2019- 2022.
 
 -   In 2021 I built a [comparison analysis dashboard](http://umec-shiny-prod-alb-79075571.us-west-2.elb.amazonaws.com/projects/FlexRatios/) of Physician specialty population to provider ratios in Utah to AAMC national averages.
 
