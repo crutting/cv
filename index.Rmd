@@ -18,7 +18,7 @@ output: html_document
 
 -   **LinkedIn:** <a href="https://www.linkedin.com/in/clark-ruttinger?trk=profile-badge">Clark-Ruttinger</a>
 
-![](images/face.png)
+![](images/face2.png)
 
 **Title: Director of Workforce Research [Utah Medical Education Council (UMEC)](umec.utah.gov).**
 
