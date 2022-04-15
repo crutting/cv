@@ -8,7 +8,7 @@ output: html_document
 
 **State Government Data Scientist/Analyst with Expertise in Health Policy**
 
--   **Hobbies:** [Woodworking](images/table.png){target="_blank"}, [Vintage Vespas](images/scoot.png){target="_blank"}, [Fiberglass Camp Trailers](https://photos.google.com/share/AF1QipNu9Y0LfL2Tpds0K3NZyTCOmhWYTOwOOUweQ-Z5lPs5RqvdAImajW6SGsD5WobIyw?pli=1&key=Rnk2bEVIUWVVSUstV1RXSWNHVE90dm5fQjAxbkRn){target="_blank"}
+-   **Hobbies:** [Woodworking](images/table.png){target="_blank"}, [Vintage Vespas](images/scoot.png){target="_blank"}, [Fiberglass Camp Trailers](https://photos.google.com/share/AF1QipNu9Y0LfL2Tpds0K3NZyTCOmhWYTOwOOUweQ-Z5lPs5RqvdAImajW6SGsD5WobIyw?pli=1&key=Rnk2bEVIUWVVSUstV1RXSWNHVE90dm5fQjAxbkRn){target="_blank"}, [Martin Guitars](images/guitars.jpg){target="_blank"}
 
 -   **Twitter:** <a href="https://twitter.com/ceruttinger?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">@ceruttinger</a>
 
