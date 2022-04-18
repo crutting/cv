@@ -104,7 +104,7 @@ My office contributed funding to Dr. Magill to begin to pursue his stated resear
 
 ![](images/conceptmodel.png) I began to explore data sources to represent population health needs and started working on a prototype calculation model using Microsoft Excel. Through Dr. Magill's national contacts we were made aware of the [IBM Healthcorps](http://ibmhealthcorps.org). We were told that they were looking for a health workforce project to get involved with. I wrote up our proposal and [we were awarded an in-kind work grant](https://www.ibm.org/initiatives/ibm-service-corps/csc-7){target="_blank" rel="noopener noreferrer"} for a team of IBM designers, architects and data scientists to come and work on our project. I produce a poster about our concept and was accepted at the Academy Health, National Health Policy Orientation in the summer of 2018 to present the work.
 
-![](images/AHposter.png){height=300px width=600px}
+![](images/AHposter.png){target="_blank"}
 
 The IBM team spent three weeks with our research team. We met with their data scientist first to explain the Excel model and concept. IBM had us organize health stakeholders across the state to engage in design sessions with their user interface designers. The IBM team asked stakeholders three questions.
 
