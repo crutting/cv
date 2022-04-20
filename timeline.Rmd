@@ -3,8 +3,8 @@ title: "Timeline"
 output: html_document
 ---
 
-```{r, echo=FALSE, results = FALSE, message=FALSE}
-#fig.height= 3, fig.width= 1
+```{r, echo=FALSE, results = FALSE, message=FALSE, fig.width=10}
+#fig.height= 3, 
 source("scripts/timeline.R")
 
 plot_timeline2(

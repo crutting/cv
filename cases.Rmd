@@ -12,11 +12,11 @@ In 2008, The Robert Wood Johnson Foundation (RWJF) and the Institute of Medicine
 
 One of the messages from the report was the all too prescient call to improve data.
 
-![](images/messge4.png){height=200px width=500px}
+![](images/messge4.png){height="200px" width="500px"}
 
 Specifically, they wanted to measure percent of Bachelors prepared nurses across the country.
 
-![](images/rec4.png){height=100px width=500px}
+![](images/rec4.png){height="100px" width="500px"}
 
 In 2015, I conducted the state's first RN workforce supply survey. Analysis of this data found that 42% of the RN workforce was prepared at a bachelors level [(pg 13).](https://umec-nursing.utah.gov/wp-content/uploads/UtahRN-LPNSupply2020-Final.pdf){target="_blank"}
 
@@ -29,15 +29,18 @@ The value of this model is two fold:
 **1. Demonstration of underlying factors involved in measuring the state's system for producing nurses. The model uses data from several sources to produce the projection.**
 
 -   UMEC RN supply surveys
+
     -   Retention, Attrition and Retirement rates
 
 
--   UMEC's RN Education survey of all nursing schools in Utah
-    -   Number of graduates per year by age and program type
+-   UMEC's RN Education survey of all nursing schools in Utah.
+
+    -   Number of graduates per year by age and program type.
 
 
 -   Nurse Licensing data from the State of Utah
-    -   Current workforce by age
+
+    -    Current workforce by age.
 
 
 -   Utah Population Projections from census and state demographers
@@ -62,7 +65,7 @@ In 2018, the Utah nurse action coalition worked with Utah Legislators to produce
 
 I developed the methodology and data linkages to produce a [nursing employment demand study](https://umec-nursing.utah.gov/wp-content/uploads/UtahRNEmploymentDemand2020.pdf){target="_blank"} from existing state data sources that can be updated at future periods automatically by refreshing the source data.
 
-![](images/sourcedata.png){height=200px width=600px}
+![](images/sourcedata.png){height="200px" width="600px"}
 
 This design allows for a persistent dashboard application to be created to update the employer demand analysis when needed.
 
@@ -74,7 +77,7 @@ The first is the National Forum of State Nursing Workforce Centers [minimum data
 
 The second source for the methodology I developed are the [Quarterly Workforce Indicators (QWI)](https://lehd.ces.census.gov/doc/QWI_101.pdf){target="_blank"} published by the U.S. Census. QWIs provide local labor market statistics by industry, worker demographics, employer, age and size. The source data are unique job-level data that link workers to their employers.
 
-![](images/MDSQWIcomp.png){height=200px width=600px}
+![](images/MDSQWIcomp.png){height="200px" width="600px"}
 
 The nursing employment demand report goes into detail on the strengths and weaknesses of this methodology. My personal thoughts as a data analyst and designer are that the methodology utilizes defined questions and equations from national sources to produce a standardized analysis that can be replicated in any state where someone can connect state licensing records and supplemental workforce supply surveys to state Unemployment Insurance records. The analysis is not dependent on arbitrary survey participation rates from health system administrators. It takes advantage of transactional data already being produced by state government to add valuable system insights.
 
@@ -88,7 +91,12 @@ In 2020 I transitioned our data collection process to be fully online. Now I sen
 
 The survey pictured is one of the last paper surveys to ever be returned to the UMEC. This happens every so often. I get a response two years after I sent out the survey (also a year after I published the results of the survey). It always makes me laugh a little and wonder why the person decided to finally send in the response.
 
-![](images/rnsurvey.jpg)
+```{r, echo=FALSE, out.width="30%", out.height="50%"}
+
+knitr::include_graphics("images/rnsurvey.jpg")
+```
+
+<!-- ![](images/rnsurvey.jpg) -->
 
 Modernization of our data collection process has allowed us to focus more time on advanced analytics and informatics. Last year my team and I modernized our analysis platform with a data warehouse built in an AWS cloud environment We produced our most recent health profession workforce survey on [Utah's Mental Health Workforce](https://umec.utah.gov/publications/mental-health/){target="_blank"} using Python and R and piped the analysis to dashboards and report templates in Tableau and R Shiny. This work serves as a code base for us to refine with new health professions analysis as we produce them. We are currently working on an update to our APRN workforce study that will iterate and improve on the templates built for our Mental Health workforce analysis
 
@@ -178,21 +186,18 @@ After engagements with many states on the question of how to leverage data for b
 
 With our strategic plan in hand and the obvious need demonstrated by the pandemic, we approached Utah Representative Norman Thurston, to consider a bill. He was of course already well aware of our work and well prepared to take this plan and run with it. [HB 176 The Utah Health Workforce Act.](https://le.utah.gov/~2022/bills/static/HB0176.html) was passed in the 2022 Utah Legislative session with broad support and no substantive opposition.
 
-I'm hopeful for the improvements that will come with the passage of this act! I look forward to what the changes will bring in terms of improved collaboration in improving health policy in Utah. We are moving from a situation where everyone is touching different parts of the 
-<!-- elephant ![](images/elephant.png)  -->
-<!-- ##```{css, echo=FALSE} -->
-<!-- img { -->
-<!--   width: 200px; -->
-<!-- } -->
-<!-- ``` -->
+I'm hopeful for the improvements that will come with the passage of this act! I look forward to what the changes will bring in terms of improved collaboration in improving health policy in Utah. We are moving from a situation where everyone is touching different parts of the elephant, <!-- elephant ![](images/elephant.png)  --> <!-- ##```{css, echo=FALSE} --> <!-- img { --> <!--   width: 200px; --> <!-- } --> <!-- ``` -->
+
 ```{r, echo=FALSE, out.width="50%"}
 
 knitr::include_graphics("images/elephant.png")
-``` 
-to a a form more like a beehive where we are working together for common goals. Quite appropriate for the Beehive State! 
+```
+
+to a a form more like a beehive where we are working together for common goals. Quite appropriate for the Beehive State!
 
 <!-- ![](images/beehive.png){!important;width=50% !important;} -->
-```{r, echo=FALSE, out.width="50%", fig.cap="A Beehive."}
+
+```{r, echo=FALSE, out.width="50%", out.height="50%"}
 knitr::include_graphics("images/beehive.png")
 ```
 
@@ -216,13 +221,15 @@ The solution we built using MySQL contained 6 tables in total:
 
 1.  The fact table stores all the responses for each respondent.
 
-2.  Dim Survey stores survey information such as the surveys' types, year, population, number of respondents and weight. Dim Respondent stores respondent information such as their license numbers, NPI, gender, date of birth and age.
+2.  Dim Survey stores survey information such as the surveys' types, year, population, number of respondents and weight.
 
-3.  Dim Question stores question texts and their corresponding master variables for standardization.
+3.  Dim Respondent stores respondent information such as their license numbers, NPI, gender, date of birth and age.
 
-4.  Dim Response stores response texts for certain questions that provides fixed answers for respondents to choose.
+4.  Dim Question stores question texts and their corresponding master variables for standardization.
 
-5.  Dim Identifier stores different weight types.
+5.  Dim Response stores response texts for certain questions that provides fixed answers for respondents to choose.
+
+6.  Dim Identifier stores different weight types.
 
 ![](images/dw1.png)
 
@@ -230,7 +237,12 @@ I had my team validate the results of our work against our previously published 
 
 My team and I have since iterated this design and produced a 2.0 version of our DW in our Amazon cloud environment. Primary changes were to organize surveys into better categories so that it is easy to identify questions universal to all professions in all years (demographics and hours worked for example), questions specific to a profession(eg: residency location or work setting) and questions that are both profession and year specific (eg: how many babies do you as a CNM deliver each year).
 
-![](images/DW2schema.png)
+```{r, echo=FALSE, out.height=="200%"}
+
+knitr::include_graphics("images/DW2schema.png")
+```
+
+<!-- ![](images/DW2schema.png) -->
 
 We are currently working on connecting this schema to Tableau dashboards to provide workforce and profession specific information and to feed future workforce reporting and analysis.
 

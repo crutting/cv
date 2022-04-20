@@ -18,7 +18,11 @@ output: html_document
 
 -   **LinkedIn:** <a href="https://www.linkedin.com/in/clark-ruttinger?trk=profile-badge">Clark-Ruttinger</a>
 
-![](images/face2.jpg)
+```{r, echo=FALSE, out.width="30%", out.height="30%"}
+
+knitr::include_graphics("images/face2.jpg")
+# ![](images/face2.jpg)
+```
 
 **Title: Director of Workforce Research [Utah Medical Education Council (UMEC)](umec.utah.gov).**
 
@@ -82,4 +86,7 @@ output: html_document
 
 -   Participant on the [Academy Health, Health Workforce Interest Group Advisory Committee for 2021-2022](https://academyhealth.org/professional-resources/interest-groups/health-workforce-interest-group/advisory-committee/page/health-workforce-interest-group-advisory-committee).
 
-This site is built and maintained entirely by me using ![](images/RStudio.png){width="10%"} ![](images/GitHub-Mark-64px.png){width="10%"}
+**This site is built and maintained entirely by me using** ![](images/RStudio.png){width="10%"} ![](images/GitHub-Mark-64px.png){width="10%"}
+```{r, echo=FALSE, message = FALSE, include = FALSE}
+sessionInfo()
+```

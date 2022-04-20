@@ -295,13 +295,13 @@ $(document).ready(function () {
 <ul>
 <li>Retention, Attrition and Retirement rates</li>
 </ul></li>
-<li><p>UMEC’s RN Education survey of all nursing schools in Utah</p>
+<li><p>UMEC’s RN Education survey of all nursing schools in Utah.</p>
 <ul>
-<li>Number of graduates per year by age and program type</li>
+<li>Number of graduates per year by age and program type.</li>
 </ul></li>
 <li><p>Nurse Licensing data from the State of Utah</p>
 <ul>
-<li>Current workforce by age</li>
+<li>Current workforce by age.</li>
 </ul></li>
 <li><p>Utah Population Projections from census and state demographers</p></li>
 <li><p>National Council of State Boards of Nursing national estimates of RNs</p></li>
@@ -334,7 +334,8 @@ $(document).ready(function () {
 <p><strong>UMEC Health Profession Supply Survey Response Rates 1997 to 2020</strong> <img src="images/surveyresponse.png" /></p>
 <p>In 2020 I transitioned our data collection process to be fully online. Now I send out invitations to take our surveys to the email addresses on file with the state professional licensing records.</p>
 <p>The survey pictured is one of the last paper surveys to ever be returned to the UMEC. This happens every so often. I get a response two years after I sent out the survey (also a year after I published the results of the survey). It always makes me laugh a little and wonder why the person decided to finally send in the response.</p>
-<p><img src="images/rnsurvey.jpg" /></p>
+<p><img src="images/rnsurvey.jpg" width="30%" height="50%" /></p>
+<!-- ![](images/rnsurvey.jpg) -->
 <p>Modernization of our data collection process has allowed us to focus more time on advanced analytics and informatics. Last year my team and I modernized our analysis platform with a data warehouse built in an AWS cloud environment We produced our most recent health profession workforce survey on <a href="https://umec.utah.gov/publications/mental-health/" target="_blank">Utah’s Mental Health Workforce</a> using Python and R and piped the analysis to dashboards and report templates in Tableau and R Shiny. This work serves as a code base for us to refine with new health professions analysis as we produce them. We are currently working on an update to our APRN workforce study that will iterate and improve on the templates built for our Mental Health workforce analysis</p>
 <p>We have also began to explore application of machine learning to the data we have available to us. From the work my team and I did to clean and standardize our historic data, one of my analysts decided to use our datasets for his capstone project to complete his Masters of Statistics. We ended up with a paper published in 2022 from his work, in the Journal of Rural and Remote Health. <a href="https://www.rrh.org.au/journal/article/7050" target="_blank" rel="noopener noreferrer">Using ML to Predict Rural Practice Decision in the Health Workforce</a> We are excited to continue to build off of this work as we further automate our data collection, cleaning, transformation and storage processes.</p>
 </div>
@@ -398,14 +399,11 @@ $(document).ready(function () {
 <p>At this point in time I had a long history of talks with legislators and various health professional stakeholders about how we could make change in Utah. They all saw the need for change. We were lacking the political will to make the change though. The onset of the pandemic became an accelerator and a focusing event on showing the desperate need for improvements to our system for informed decision making around health policy.</p>
 <p>After engagements with many states on the question of how to leverage data for better health workforce policy, the <a href="https://www.nga.org/center/publications/informing-health-care-workforce-policy-leveraging-data/" target="_blank">NGA produced a brief</a> to inform governors and states about how to go about this important work.</p>
 <p>With our strategic plan in hand and the obvious need demonstrated by the pandemic, we approached Utah Representative Norman Thurston, to consider a bill. He was of course already well aware of our work and well prepared to take this plan and run with it. <a href="https://le.utah.gov/~2022/bills/static/HB0176.html">HB 176 The Utah Health Workforce Act.</a> was passed in the 2022 Utah Legislative session with broad support and no substantive opposition.</p>
-<p>I’m hopeful for the improvements that will come with the passage of this act! I look forward to what the changes will bring in terms of improved collaboration in improving health policy in Utah. We are moving from a situation where everyone is touching different parts of the <!-- elephant ![](images/elephant.png)  --> <!-- ##```{css, echo=FALSE} --> <!-- img { --> <!--   width: 200px; --> <!-- } --> <!-- ``` --> <img src="images/elephant.png" width="50%" /> to a a form more like a beehive where we are working together for common goals. Quite appropriate for the Beehive State!</p>
+<p>I’m hopeful for the improvements that will come with the passage of this act! I look forward to what the changes will bring in terms of improved collaboration in improving health policy in Utah. We are moving from a situation where everyone is touching different parts of the elephant, <!-- elephant ![](images/elephant.png)  --> <!-- ##```{css, echo=FALSE} --> <!-- img { --> <!--   width: 200px; --> <!-- } --> <!-- ``` --></p>
+<p><img src="images/elephant.png" width="50%" /></p>
+<p>to a a form more like a beehive where we are working together for common goals. Quite appropriate for the Beehive State!</p>
 <!-- ![](images/beehive.png){!important;width=50% !important;} -->
-<div class="figure">
-<img src="images/beehive.png" alt="A Beehive." width="50%" />
-<p class="caption">
-A Beehive.
-</p>
-</div>
+<p><img src="images/beehive.png" width="50%" height="50%" /></p>
 </div>
 <div id="modeling-a-health-workforce-data-warehouse" class="section level3">
 <h3>Modeling a Health Workforce Data Warehouse</h3>
@@ -419,7 +417,8 @@ A Beehive.
 <p>The solution we built using MySQL contained 6 tables in total:</p>
 <ol style="list-style-type: decimal">
 <li><p>The fact table stores all the responses for each respondent.</p></li>
-<li><p>Dim Survey stores survey information such as the surveys’ types, year, population, number of respondents and weight. Dim Respondent stores respondent information such as their license numbers, NPI, gender, date of birth and age.</p></li>
+<li><p>Dim Survey stores survey information such as the surveys’ types, year, population, number of respondents and weight.</p></li>
+<li><p>Dim Respondent stores respondent information such as their license numbers, NPI, gender, date of birth and age.</p></li>
 <li><p>Dim Question stores question texts and their corresponding master variables for standardization.</p></li>
 <li><p>Dim Response stores response texts for certain questions that provides fixed answers for respondents to choose.</p></li>
 <li><p>Dim Identifier stores different weight types.</p></li>
@@ -427,7 +426,8 @@ A Beehive.
 <p><img src="images/dw1.png" /></p>
 <p>I had my team validate the results of our work against our previously published analysis using the same data. They wrote up their work and <a href="https://docs.google.com/presentation/d/1-vAFNi2LHSIr9DB3ts499JpuhqPEOY-r3SFpbWIIWes/edit#slide=id.g5aab392ecc_0_673" target="_blank">presented it to the UMEC.</a>.</p>
 <p>My team and I have since iterated this design and produced a 2.0 version of our DW in our Amazon cloud environment. Primary changes were to organize surveys into better categories so that it is easy to identify questions universal to all professions in all years (demographics and hours worked for example), questions specific to a profession(eg: residency location or work setting) and questions that are both profession and year specific (eg: how many babies do you as a CNM deliver each year).</p>
-<p><img src="images/DW2schema.png" /></p>
+<p><img src="images/DW2schema.png" width="2470" /></p>
+<!-- ![](images/DW2schema.png) -->
 <p>We are currently working on connecting this schema to Tableau dashboards to provide workforce and profession specific information and to feed future workforce reporting and analysis.</p>
 <p>We are also working to interconnect additional government, public and private data sets into our data model.</p>
 <p><img src="images/futureschema.png" /></p>
