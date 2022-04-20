@@ -29,16 +29,16 @@ The value of this model is two fold:
 **1. Demonstration of underlying factors involved in measuring the state's system for producing nurses. The model uses data from several sources to produce the projection.**
 
 -   UMEC RN supply surveys
-
     -   Retention, Attrition and Retirement rates
 
--   UMEC's RN Education survey of all nursing schools in Utah
 
+-   UMEC's RN Education survey of all nursing schools in Utah
     -   Number of graduates per year by age and program type
 
--   Nurse Licensing data from the State of Utah
 
+-   Nurse Licensing data from the State of Utah
     -   Current workforce by age
+
 
 -   Utah Population Projections from census and state demographers
 
@@ -178,7 +178,23 @@ After engagements with many states on the question of how to leverage data for b
 
 With our strategic plan in hand and the obvious need demonstrated by the pandemic, we approached Utah Representative Norman Thurston, to consider a bill. He was of course already well aware of our work and well prepared to take this plan and run with it. [HB 176 The Utah Health Workforce Act.](https://le.utah.gov/~2022/bills/static/HB0176.html) was passed in the 2022 Utah Legislative session with broad support and no substantive opposition.
 
-I'm hopeful for the improvements that will come with the passage of this act! I look forward to what the changes will bring in terms of improved collaboration in improving health policy in Utah. We are moving from a situation where everyone is touching different parts of the elephant ![](images/elephant.png) to a a form more like a beehive where we are working together for common goals. Quite appropriate for the Beehive State! ![](images/beehive.png)
+I'm hopeful for the improvements that will come with the passage of this act! I look forward to what the changes will bring in terms of improved collaboration in improving health policy in Utah. We are moving from a situation where everyone is touching different parts of the 
+<!-- elephant ![](images/elephant.png)  -->
+<!-- ##```{css, echo=FALSE} -->
+<!-- img { -->
+<!--   width: 200px; -->
+<!-- } -->
+<!-- ``` -->
+```{r, echo=FALSE, out.width="50%"}
+
+knitr::include_graphics("images/elephant.png")
+``` 
+to a a form more like a beehive where we are working together for common goals. Quite appropriate for the Beehive State! 
+
+<!-- ![](images/beehive.png){!important;width=50% !important;} -->
+```{r, echo=FALSE, out.width="50%", fig.cap="A Beehive."}
+knitr::include_graphics("images/beehive.png")
+```
 
 ### Modeling a Health Workforce Data Warehouse
 
