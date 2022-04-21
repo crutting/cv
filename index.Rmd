@@ -24,13 +24,13 @@ knitr::include_graphics("images/face2.jpg")
 # ![](images/face2.jpg)
 ```
 
-**Title: Director of Workforce Research [Utah Medical Education Council (UMEC)](umec.utah.gov).**
+**Title: Director of Workforce Research [Utah Medical Education Council (UMEC)](https://umec.utah.gov).**
 
 -   Advise the healthcare industry on workforce education and practice trends.
 
 -   Collect and analyze supply, education and demand data about the state's health workforce.
 
--   Design Dashboarding.
+-   Design dashboarding.
 
 -   Create stock and flow projections.
 
