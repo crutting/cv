@@ -47,7 +47,7 @@ The value of this model is two fold:
 
 -   National Council of State Boards of Nursing national estimates of RNs
 
-**2. Ability to produce counterfactuals to examine best the best strategy of attaining a defined goal for the system.**
+**2. Ability to produce counterfactuals to examine the best strategy of attaining a defined goal for the system.**
 
 -   What is the result in the model of adjusting for the impacts on enrollment from the pandemic ?
 
@@ -279,6 +279,6 @@ We then made a plan for how to ETL the data into the files required to load the 
 
 From there, we ran SQL quereies to produce the files to load according to the graph schema we designed for NEO4J
 
-![](images/apcdrelationships.png) Here is the same schema in NEO4J after we loaded our initial test files. ![](images/apcdgraphschema.png)
+![](images/apcdrelationships.png) Here is the same schema in NEO4J after we loaded our initial test files. ![](images/apcdgraphschema.jpg)
 
 We are currently working on improving the data load process and cleaning up some identified bugs so that we can begin pursuing our exploration of machine learning algorithms to this data set.

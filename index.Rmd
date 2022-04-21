@@ -18,6 +18,8 @@ output: html_document
 
 -   **LinkedIn:** <a href="https://www.linkedin.com/in/clark-ruttinger?trk=profile-badge">Clark-Ruttinger</a>
 
+-  **Currently trying to understand this amazing book: [The Book of Why](https://www.amazon.com/Book-Why-Science-Cause-Effect/dp/046509760X) 
+
 ```{r, echo=FALSE, out.width="30%", out.height="30%"}
 
 knitr::include_graphics("images/face2.jpg")
