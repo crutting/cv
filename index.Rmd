@@ -88,6 +88,8 @@ knitr::include_graphics("images/face2.jpg")
 
 -   Participant on the [Academy Health, Health Workforce Interest Group Advisory Committee for 2021-2022](https://academyhealth.org/professional-resources/interest-groups/health-workforce-interest-group/advisory-committee/page/health-workforce-interest-group-advisory-committee).
 
+-   Invited to be a visiting scholar with the [American Board of Family Medicine, Center for Professionalism and Value](https://professionalismandvalue.org/work-with-us/), Summer 2023.
+
 **This site is built and maintained entirely by me using** ![](images/RStudio.png){width="10%"} ![](images/GitHub-Mark-64px.png){width="10%"}
 ```{r, echo=FALSE, message = FALSE, include = FALSE}
 sessionInfo()
