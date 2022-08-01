@@ -29,56 +29,84 @@ Salt Lake City, Utah, 84124
 
 # **Skills**
 
-|                        |                            |                       |                                   |
-|-----------------|-----------------|-----------------|----------------------|
-| SQL, Python, Jupyter Notebook   | RStudio, Github            | SPSS, SAS, STATA      | Tableau                           |
-| Data Warehouse Design  | Amazon Cloud Architecture  | Graph Database Design | Regression/ Classification Models |
-| Grant Writing          | Team Oriented Collaborator | Problem Solver        | Excellent Communicator            |
-| Health Policy Analysis | Research Design            | Systems Thinking      | Fluent Spanish                    |
++---------------+---------------+---------------+--------------------+
+| SQL, Python,  | RStudio,      | SPSS, SAS,    | Tableau            |
+| Jupyter       | Github        | STATA         |                    |
+| Notebook      |               |               |                    |
++---------------+---------------+---------------+--------------------+
+| Data          | Amazon Cloud  | Graph         | Regression/        |
+| Warehouse     | Architecture  | Database      | Classification     |
+| Design        |               | Design        | Models             |
++---------------+---------------+---------------+--------------------+
+| Grant Writing | Team Oriented | Problem       | Excellent          |
+|               | Collaborator  | Solver        | Communicator       |
++---------------+---------------+---------------+--------------------+
+| Health Policy | Research      | Systems       | Fluent Spanish     |
+| Analysis      | Design        | Thinking      |                    |
++---------------+---------------+---------------+--------------------+
 
 # **Work Experience**
 
-## **Utah Medical Education Council**
+## **Utah Health Workforce Information Center**
 
-### Acting, Executive Director
+### Founding Director
 
-*1.2022- present*
+*7.1.2022- present*
 
--   Worked with healthcare Industry, Education and Government
-    Stakeholders to develop and pass [HB 176 the Utah Healthcare
-    Workforce Act.](https://le.utah.gov/~2022/bills/static/HB0176.html)
-    in the 2022 Utah Legislative Session.
+-   Engaged with a coalition of healthcare stakeholders in Utah over
+    2020-21 to develop a strategic plan for improving health workforce
+    data collection and policy guidance resulting in the passage of [HB
+    176, The Utah Health Workforce
+    Act](https://le.utah.gov/~2022/bills/static/HB0176.html) in the 2022
+    legislative session.
 
-    -   This legislation sets up an advisory council to coordinate
-        future healthcare worker needs as well as provide for better
-        collection of data by integrating a supplemental supply survey
-        with the state health professional licensing cycle, with the
-        goal of analysis and modeling to support more informed workforce
-        decisions. <br></br>
+    -   This legislation did three things:
 
--   Will become the Director of the Utah Health Workforce Information
-    Center as of July 1, 2022 as described in the Utah Health Workforce
-    Act
+        -   Created the Utah Health Workforce Information Center (HWIC)
+            out of the workforce research team of the Utah Medical
+            Education Council (UMEC).
 
--   Serves on the expert work-group for the HRSA funded [Health
+        -   Integrated supplemental supply surveys of the health
+            workforce with the license and renewal process in Utah and
+            aligned access for the HWIC to various Utah Department of
+            Health data sources to improve modeling and analytics.
+
+        -   Created the Utah Health Workforce Advisory Committee to
+            provide guidance on health policy resource allocation for
+            legislators, administrators and policy makers.
+
+-   Continuing duties of Director, Workforce Research from the UMEC.
+
+-   Serving on the [Health Workforce Interest Group Advisory Committee
+    for Academy
+    Health.](https://academyhealth.org/professional-resources/interest-groups/health-workforce-interest-group/advisory-committee/page/health-workforce-interest-group-advisory-committee)
+
+-   Serving on the expert work-group for the HRSA funded [Health
     Workforce Technical Assistance
     Center](https://www.healthworkforceta.org/about/expert-workgroup/)
     at the University of Albany.
 
--   Serves as a member of the Utah Hospital Association Workforce
-    Committee, The Utah Nurse Action Coalition and the Utah Organization
-    of Nurse Leaders Academic Leadership Committee.
+-   Member of the Utah Hospital Association Workforce Committee, The
+    Utah Nurse Action Coalition and the Utah Organization of Nurse
+    Leaders Academic Leadership Committee.
 
--   [Serves in a consulting capacity with the University of Utah School
+-   [Serving in a consulting capacity with the University of Utah School
     of Nursing- on the HRSA ANEW grant- "Addressing Barriers to Primary
     Care Workforce Needs in Rural and Underserved Settings with
     Academic-Clinical Partnerships and Innovations in
     Technology".](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiu6b6H-_H2AhUnLTQIHc4kDNcQFnoECAkQAQ&url=https%3A%2F%2Fgrants.hrsa.gov%2F2010%2Fweb2External%2FInterface%2FCommon%2FPublicWebLinkController.aspx%3FGrantNumber%3DT94HP32908%26WL_WEBLINK_ID%3D1&usg=AOvVaw3L5FVAtydxvfQEhMUDozcc)
 
--   Consults with the University of Utah School of Medicine- "American
+-   Consulting the University of Utah School of Medicine- "American
     Indian Health Workforce Plan".
 
--   Requested by the RAND Corporation to serve as a consultant on their recently awarded proposal to produce the 2023 update on the [AAMC Projections of Physician Workforce Supply, Demand and Need](https://www.aamc.org/data-reports/workforce/data/complexities-physician-supply-and-demand-projections-2019-2034).
+## **Utah Medical Education Council**
+
+### Acting, Executive Director
+
+*1.2022- 6.2022*
+
+-   Oversaw merger and transition management of the UMEC to the HWIC
+    within the Utah Department of Health and Human Services.
 
 ### Director, Workforce Research
 
@@ -88,9 +116,9 @@ Salt Lake City, Utah, 84124
 
 -   Management of all research projects for the Council.
 
--   Recipient of [IBM Healthcorps
-    grant](https://ibmhealthcorpsblog.wordpress.com/) to model Primary
-    Care workforce based on population health needs.
+    -   Recipient of [IBM Healthcorps
+        grant](https://ibmhealthcorpsblog.wordpress.com/) to model
+        Primary Care workforce based on population health needs.
 
 -   Provide high level expertise in research design, statistical
     analysis and emerging issues/trends.
@@ -135,7 +163,7 @@ Salt Lake City, Utah, 84124
 
         -   Created methodology, data linkage and authored the first
             [Utah Nursing Employment Demand
-            Study](https://umec-nursing.utah.gov/wp-content/uploads/UtahRNEmploymentDemand2020.pdf)
+            Study](https://drive.google.com/file/d/1jGr4R_3pm-E0YRr5kV19EHaO6N5DwXxE/view?usp=sharing)
             as required in
             [statute](https://le.utah.gov/~2018/bills/static/SB0147.html)
             by the State legislature beginning in 2020.
@@ -268,7 +296,9 @@ Salt Lake City, Utah, 84124
 ## **BA, Political Science/ BA, Spanish** *University of Utah, 1998-2002*
 
 -   Certificate in International Relations
+
 -   Hinkley Institute of Politics, Summer Internship
+
     -   Chasqui Humanitarian- Cuzco Peru, 2000
 
         -   Assisted with development and implementation of humanitarian
@@ -325,7 +355,7 @@ Salt Lake City, Utah, 84124
 
 # **Publications**
 
-## **Journal Articles**
+## **Peer Reviewed Journal Articles**
 
 1.  [Bounsanga et al, Using machine learning to identify factors
     associated with practice location of the healthcare workforce, Rural
